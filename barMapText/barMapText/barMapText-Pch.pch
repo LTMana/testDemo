@@ -1,0 +1,28 @@
+//
+//  barMapText-Pch.pch
+//  barMapText
+//
+//  Created by 刘博通 on 16/5/30.
+//  Copyright (c) 2016年 ltcom. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "UIView+AutoLayout.h"
+#import "ErrorMsg.h"
+#import "SVProgressHUD.h"
+#import "AdaptiveHeight.h"
+
+#endif
+
+
+#define IOS_7 (([[UIDevice currentDevice].systemVersion floatValue] >= 7.0f) && ([[UIDevice currentDevice].systemVersion floatValue] < 8.0f))
+#define IOS_8 (([[UIDevice currentDevice].systemVersion floatValue] >= 8.0f) && ([[UIDevice currentDevice].systemVersion floatValue] < 9.0f))
+#define IOS_9 (([[UIDevice currentDevice].systemVersion floatValue] >= 9.0f)
+
+#define kMainScreenSizeWidth        ([[UIScreen mainScreen] bounds].size.width)
+#define kMainScreenSizeHeight       ([[UIScreen mainScreen] bounds].size.height)
+#define kMainScreenBounds           ([[UIScreen mainScreen] bounds])
+#define kMainScreenSize             ([[UIScreen mainScreen] bounds].size)
+
+#define kColor(r,g,b,a) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:a]

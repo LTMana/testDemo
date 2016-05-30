@@ -14,6 +14,9 @@
 		F1F8AD991CF688BE0007692C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F8AD981CF688BE0007692C /* Images.xcassets */; };
 		F1F8AD9C1CF688BE0007692C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F8AD9A1CF688BE0007692C /* LaunchScreen.xib */; };
 		F1F8ADA81CF688BE0007692C /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8ADA71CF688BE0007692C /* ____Tests.m */; };
+		F1F8ADB31CF68D610007692C /* oneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8ADB21CF68D610007692C /* oneViewController.m */; };
+		F1F8ADB61CF68D6B0007692C /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8ADB51CF68D6B0007692C /* TwoViewController.m */; };
+		F1F8ADB91CF692870007692C /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F8ADB81CF692870007692C /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		F1F8ADA11CF688BE0007692C /* 画页迁移Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "画页迁移Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F8ADA61CF688BE0007692C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F8ADA71CF688BE0007692C /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		F1F8ADB11CF68D610007692C /* oneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oneViewController.h; sourceTree = "<group>"; };
+		F1F8ADB21CF68D610007692C /* oneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oneViewController.m; sourceTree = "<group>"; };
+		F1F8ADB41CF68D6B0007692C /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		F1F8ADB51CF68D6B0007692C /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		F1F8ADB71CF692870007692C /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		F1F8ADB81CF692870007692C /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,14 @@
 			children = (
 				F1F8AD8F1CF688BE0007692C /* AppDelegate.h */,
 				F1F8AD901CF688BE0007692C /* AppDelegate.m */,
+				F1F8ADB71CF692870007692C /* NavigationViewController.h */,
+				F1F8ADB81CF692870007692C /* NavigationViewController.m */,
 				F1F8AD921CF688BE0007692C /* ViewController.h */,
 				F1F8AD931CF688BE0007692C /* ViewController.m */,
+				F1F8ADB11CF68D610007692C /* oneViewController.h */,
+				F1F8ADB21CF68D610007692C /* oneViewController.m */,
+				F1F8ADB41CF68D6B0007692C /* TwoViewController.h */,
+				F1F8ADB51CF68D6B0007692C /* TwoViewController.m */,
 				F1F8AD951CF688BE0007692C /* Main.storyboard */,
 				F1F8AD981CF688BE0007692C /* Images.xcassets */,
 				F1F8AD9A1CF688BE0007692C /* LaunchScreen.xib */,
@@ -221,7 +236,10 @@
 			files = (
 				F1F8AD941CF688BE0007692C /* ViewController.m in Sources */,
 				F1F8AD911CF688BE0007692C /* AppDelegate.m in Sources */,
+				F1F8ADB91CF692870007692C /* NavigationViewController.m in Sources */,
 				F1F8AD8E1CF688BE0007692C /* main.m in Sources */,
+				F1F8ADB61CF68D6B0007692C /* TwoViewController.m in Sources */,
+				F1F8ADB31CF68D610007692C /* oneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
