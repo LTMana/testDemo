@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [MBEngine sharedEngine].delegate = self;
     
-    [[MBEngine sharedEngine] checkWithKey:@"zxb186-20111014-02-Z-T-I11101"];
+    [[MBEngine sharedEngine] checkWithKey:@"111"];
     NSLog(@"engineVersion:%@",[[MBEngine sharedEngine] version]);
     
     // 1. 创建窗口
@@ -77,6 +77,7 @@
     // 更改屏幕分辨率用于横竖屏切换
     [MBExpandView setViewWidth:320 height:200];
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
