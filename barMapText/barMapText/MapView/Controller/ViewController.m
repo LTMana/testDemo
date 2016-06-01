@@ -202,7 +202,7 @@
            // NSLog(@"%d,%d",point.x,point.y);
             CGPoint pivotPoint = {0, 0};
             showRoadModel.anno=[[MBAnnotation alloc]initWithZLevel:0 pos:point iconId:1030 pivot:pivotPoint];
-            
+            showRoadModel.anno.tag =(int)showRoadModel.eventId;
             
             
              [self.mapView addAnnotation:showRoadModel.anno];
@@ -319,6 +319,14 @@
 //{
 //    NSLog(@"dfds");
 //}
+
+#pragma mark - MBMapViewDelegate
+-(void)mbMapView:(MBMapView *)mapView onAnnotationSelected:(MBAnnotation *)annot
+
+{
+    NSLog(@"%d",annot.tag);
+}
+
 
 
 #pragma mark - MBGpsLocationDelegate
