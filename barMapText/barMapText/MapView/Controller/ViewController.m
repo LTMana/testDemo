@@ -59,7 +59,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   [self setUpMapView];
+  [self setUpMapView];
     
 }
 

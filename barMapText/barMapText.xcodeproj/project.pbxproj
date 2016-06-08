@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F113E5FF1D0697300096C136 /* drawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113E5FE1D0697300096C136 /* drawLineViewController.m */; };
 		F19B6A121CFEBDD500BEACA3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A001CFEBDD500BEACA3 /* AFHTTPRequestOperation.m */; };
 		F19B6A131CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A021CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.m */; };
 		F19B6A141CFEBDD500BEACA3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A041CFEBDD500BEACA3 /* AFHTTPSessionManager.m */; };
@@ -90,6 +91,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F113E5FD1D0697300096C136 /* drawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawLineViewController.h; sourceTree = "<group>"; };
+		F113E5FE1D0697300096C136 /* drawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawLineViewController.m; sourceTree = "<group>"; };
 		F19B69FF1CFEBDD500BEACA3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F19B6A001CFEBDD500BEACA3 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F19B6A011CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -470,6 +473,39 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		F1AB812D1D0695EE0053E2F7 /* MapView 画线 */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB812E1D0695EE0053E2F7 /* Controller */,
+				F1AB812F1D0695EE0053E2F7 /* Model */,
+				F1AB81301D0695EE0053E2F7 /* View */,
+			);
+			path = "MapView 画线";
+			sourceTree = "<group>";
+		};
+		F1AB812E1D0695EE0053E2F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F113E5FD1D0697300096C136 /* drawLineViewController.h */,
+				F113E5FE1D0697300096C136 /* drawLineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F1AB812F1D0695EE0053E2F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1AB81301D0695EE0053E2F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F1E1979C1CFBE82300205CB3 = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +528,7 @@
 		F1E197A71CFBE82300205CB3 /* barMapText */ = {
 			isa = PBXGroup;
 			children = (
+				F1AB812D1D0695EE0053E2F7 /* MapView 画线 */,
 				F19B6A411CFEC0C500BEACA3 /* MapView */,
 				F1E197AC1CFBE82300205CB3 /* AppDelegate.h */,
 				F1E197AD1CFBE82300205CB3 /* AppDelegate.m */,
@@ -700,6 +737,7 @@
 				F19B6A361CFEBEDA00BEACA3 /* NSObject+MJClass.m in Sources */,
 				F19B6A311CFEBEDA00BEACA3 /* MJExtensionConst.m in Sources */,
 				F19B6A391CFEBEDA00BEACA3 /* NSObject+MJProperty.m in Sources */,
+				F113E5FF1D0697300096C136 /* drawLineViewController.m in Sources */,
 				F1E197AB1CFBE82300205CB3 /* main.m in Sources */,
 				F19F5DF81CFC0B820001176F /* MJRefreshFooter.m in Sources */,
 				F19F5E061CFC0B820001176F /* UIScrollView+MJRefresh.m in Sources */,

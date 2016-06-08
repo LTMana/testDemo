@@ -1,0 +1,10 @@
+PODS:
+  - TIMapboxGeocoder (0.2.0)
+
+DEPENDENCIES:
+  - TIMapboxGeocoder (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  TIMapboxGeocoder: ed196b62fcb5f38a12268529a15aaa229d2ced80
+
+COCOAPODS: 0.39.0
