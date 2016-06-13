@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F17FDFE61D0B1722000CCA04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17FDFE51D0B1722000CCA04 /* main.m */; };
+		F17FDFE91D0B1722000CCA04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17FDFE81D0B1722000CCA04 /* AppDelegate.m */; };
+		F17FDFEC1D0B1722000CCA04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17FDFEB1D0B1722000CCA04 /* ViewController.m */; };
+		F17FDFEF1D0B1722000CCA04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17FDFED1D0B1722000CCA04 /* Main.storyboard */; };
+		F17FDFF11D0B1722000CCA04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17FDFF01D0B1722000CCA04 /* Images.xcassets */; };
+		F17FDFF41D0B1722000CCA04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17FDFF21D0B1722000CCA04 /* LaunchScreen.xib */; };
+		F17FE0001D0B1722000CCA04 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F17FDFFF1D0B1722000CCA04 /* _____Tests.m */; };
+		F17FE00B1D0B17E0000CCA04 /* count.m in Sources */ = {isa = PBXBuildFile; fileRef = F17FE00A1D0B17E0000CCA04 /* count.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F17FDFFA1D0B1722000CCA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17FDFD81D0B1722000CCA04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17FDFDF1D0B1722000CCA04;
+			remoteInfo = "响应式编程";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F17FDFE01D0B1722000CCA04 /* 响应式编程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "响应式编程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17FDFE41D0B1722000CCA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17FDFE51D0B1722000CCA04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F17FDFE71D0B1722000CCA04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F17FDFE81D0B1722000CCA04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F17FDFEA1D0B1722000CCA04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F17FDFEB1D0B1722000CCA04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F17FDFEE1D0B1722000CCA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F17FDFF01D0B1722000CCA04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F17FDFF31D0B1722000CCA04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F17FDFF91D0B1722000CCA04 /* 响应式编程Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "响应式编程Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17FDFFE1D0B1722000CCA04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17FDFFF1D0B1722000CCA04 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		F17FE0091D0B17E0000CCA04 /* count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = count.h; path = "响应式编程/count.h"; sourceTree = "<group>"; };
+		F17FE00A1D0B17E0000CCA04 /* count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = count.m; path = "响应式编程/count.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F17FDFDD1D0B1722000CCA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17FDFF61D0B1722000CCA04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F17FDFD71D0B1722000CCA04 = {
+			isa = PBXGroup;
+			children = (
+				F17FE0091D0B17E0000CCA04 /* count.h */,
+				F17FE00A1D0B17E0000CCA04 /* count.m */,
+				F17FDFE21D0B1722000CCA04 /* 响应式编程 */,
+				F17FDFFC1D0B1722000CCA04 /* 响应式编程Tests */,
+				F17FDFE11D0B1722000CCA04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17FDFE11D0B1722000CCA04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17FDFE01D0B1722000CCA04 /* 响应式编程.app */,
+				F17FDFF91D0B1722000CCA04 /* 响应式编程Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17FDFE21D0B1722000CCA04 /* 响应式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				F17FDFE71D0B1722000CCA04 /* AppDelegate.h */,
+				F17FDFE81D0B1722000CCA04 /* AppDelegate.m */,
+				F17FDFEA1D0B1722000CCA04 /* ViewController.h */,
+				F17FDFEB1D0B1722000CCA04 /* ViewController.m */,
+				F17FDFED1D0B1722000CCA04 /* Main.storyboard */,
+				F17FDFF01D0B1722000CCA04 /* Images.xcassets */,
+				F17FDFF21D0B1722000CCA04 /* LaunchScreen.xib */,
+				F17FDFE31D0B1722000CCA04 /* Supporting Files */,
+			);
+			path = "响应式编程";
+			sourceTree = "<group>";
+		};
+		F17FDFE31D0B1722000CCA04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F17FDFE41D0B1722000CCA04 /* Info.plist */,
+				F17FDFE51D0B1722000CCA04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F17FDFFC1D0B1722000CCA04 /* 响应式编程Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F17FDFFF1D0B1722000CCA04 /* _____Tests.m */,
+				F17FDFFD1D0B1722000CCA04 /* Supporting Files */,
+			);
+			path = "响应式编程Tests";
+			sourceTree = "<group>";
+		};
+		F17FDFFD1D0B1722000CCA04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F17FDFFE1D0B1722000CCA04 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17FDFDF1D0B1722000CCA04 /* 响应式编程 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17FE0031D0B1722000CCA04 /* Build configuration list for PBXNativeTarget "响应式编程" */;
+			buildPhases = (
+				F17FDFDC1D0B1722000CCA04 /* Sources */,
+				F17FDFDD1D0B1722000CCA04 /* Frameworks */,
+				F17FDFDE1D0B1722000CCA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "响应式编程";
+			productName = "响应式编程";
+			productReference = F17FDFE01D0B1722000CCA04 /* 响应式编程.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F17FDFF81D0B1722000CCA04 /* 响应式编程Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17FE0061D0B1722000CCA04 /* Build configuration list for PBXNativeTarget "响应式编程Tests" */;
+			buildPhases = (
+				F17FDFF51D0B1722000CCA04 /* Sources */,
+				F17FDFF61D0B1722000CCA04 /* Frameworks */,
+				F17FDFF71D0B1722000CCA04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17FDFFB1D0B1722000CCA04 /* PBXTargetDependency */,
+			);
+			name = "响应式编程Tests";
+			productName = "响应式编程Tests";
+			productReference = F17FDFF91D0B1722000CCA04 /* 响应式编程Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17FDFD81D0B1722000CCA04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = LT;
+				TargetAttributes = {
+					F17FDFDF1D0B1722000CCA04 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F17FDFF81D0B1722000CCA04 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F17FDFDF1D0B1722000CCA04;
+					};
+				};
+			};
+			buildConfigurationList = F17FDFDB1D0B1722000CCA04 /* Build configuration list for PBXProject "响应式编程" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17FDFD71D0B1722000CCA04;
+			productRefGroup = F17FDFE11D0B1722000CCA04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17FDFDF1D0B1722000CCA04 /* 响应式编程 */,
+				F17FDFF81D0B1722000CCA04 /* 响应式编程Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F17FDFDE1D0B1722000CCA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17FDFEF1D0B1722000CCA04 /* Main.storyboard in Resources */,
+				F17FDFF41D0B1722000CCA04 /* LaunchScreen.xib in Resources */,
+				F17FDFF11D0B1722000CCA04 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17FDFF71D0B1722000CCA04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F17FDFDC1D0B1722000CCA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17FDFEC1D0B1722000CCA04 /* ViewController.m in Sources */,
+				F17FDFE91D0B1722000CCA04 /* AppDelegate.m in Sources */,
+				F17FDFE61D0B1722000CCA04 /* main.m in Sources */,
+				F17FE00B1D0B17E0000CCA04 /* count.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17FDFF51D0B1722000CCA04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17FE0001D0B1722000CCA04 /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F17FDFFB1D0B1722000CCA04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17FDFDF1D0B1722000CCA04 /* 响应式编程 */;
+			targetProxy = F17FDFFA1D0B1722000CCA04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F17FDFED1D0B1722000CCA04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17FDFEE1D0B1722000CCA04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F17FDFF21D0B1722000CCA04 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F17FDFF31D0B1722000CCA04 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F17FE0011D0B1722000CCA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F17FE0021D0B1722000CCA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17FE0041D0B1722000CCA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "响应式编程/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F17FE0051D0B1722000CCA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "响应式编程/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F17FE0071D0B1722000CCA04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "响应式编程Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/响应式编程.app/响应式编程";
+			};
+			name = Debug;
+		};
+		F17FE0081D0B1722000CCA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "响应式编程Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/响应式编程.app/响应式编程";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F17FDFDB1D0B1722000CCA04 /* Build configuration list for PBXProject "响应式编程" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17FE0011D0B1722000CCA04 /* Debug */,
+				F17FE0021D0B1722000CCA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17FE0031D0B1722000CCA04 /* Build configuration list for PBXNativeTarget "响应式编程" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17FE0041D0B1722000CCA04 /* Debug */,
+				F17FE0051D0B1722000CCA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F17FE0061D0B1722000CCA04 /* Build configuration list for PBXNativeTarget "响应式编程Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17FE0071D0B1722000CCA04 /* Debug */,
+				F17FE0081D0B1722000CCA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17FDFD81D0B1722000CCA04 /* Project object */;
+}
