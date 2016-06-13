@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [MBEngine sharedEngine].delegate = self;
     
-    [[MBEngine sharedEngine] checkWithKey:@"11"];
+    [[MBEngine sharedEngine] checkWithKey:@"wangxy002-20160523-02-Z-D-I11101"];
     NSLog(@"engineVersion:%@",[[MBEngine sharedEngine] version]);
     
     // 1. 创建窗口

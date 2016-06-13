@@ -15,6 +15,7 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 
+#define POINTCOUNT 10
 @interface drawLineViewController ()<MBGpsLocationDelegate,MBMapViewDelegate,MBReverseGeocodeDelegate,UIAlertViewDelegate>
 
 /**
@@ -36,6 +37,9 @@
  *  绘制多边形polygon和线条line的Overlay
  */
 @property (nonatomic ,strong) MBPolylineOverlay *polylineOverlay;
+
+
+@property (nonatomic,strong) NSArray *pointSet;
 
 @end
 
@@ -63,6 +67,18 @@
         // 判断授权
         _mapView.delegate = self;
         
+    NSString *filePath =  [[NSBundle mainBundle] pathForResource:@"drawLine.txt" ofType:nil];
+        
+        NSString *str=[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        NSArray *array = [str componentsSeparatedByString:@"move,"];
+        
+        for (NSArray *arr1 in array) {
+            
+            NSLog(@"%@",arr1);
+        }
+        
+        
+       // NSLog(@"array:%@",array);
     }
     
     return _mapView;
@@ -108,13 +124,132 @@ BOOL state= YES;
 - (IBAction)drawLine {
    
     
+    static int index=0;
+    for (NSArray *pointsArr in self.pointSet) {
+        index ++;
+        NSLog(@"执行次数%d",index);
+        MBPoint* points = (MBPoint*)malloc(sizeof(MBPoint)*(pointsArr.count));
+        
+        MBPoint*tempPoints = points;
+        for (NSDictionary *lonWithLat in pointsArr) {
+            
+          double lon  = [lonWithLat[@"lon"] intValue]*0.000001;
+            
+         double lat = [lonWithLat[@"lat"] intValue]*0.000001;
+
+            
+//               NSLog(@"GC-02--%f,%f",lon , lat);
+            
+            CLLocationCoordinate2D coordinate =[self  MarsGS2WorldGS:CLLocationCoordinate2DMake(lat, lon)];
+            
+            
+            (*tempPoints).x = [lonWithLat[@"lon"] intValue] *0.1;
+            
+            (*tempPoints).y =[lonWithLat[@"lat"] intValue]*0.1;
+            tempPoints++;
+
+            
+            NSLog(@"MBPoint--%d,%d", (*tempPoints).x,(*tempPoints).y);
+
+            
+            
+//                        NSLog(@"WD-84--%f,%f",coordinate.longitude , coordinate.latitude);
+            
+            
+        }
+        
+        
+        
+        self.polylineOverlay = [[MBPolylineOverlay alloc] initWithPoints:points count:pointsArr.count isClosed:NO];
+        [self.polylineOverlay setWidth:15];
+        [self.polylineOverlay setOutlineColor:0xFF000000];
+        [self.polylineOverlay setStrokeStyle:MBStrokeStyle_route];
+        [self.polylineOverlay setColor:0xFF2176EE];
+        [self.mapView addOverlay:self.polylineOverlay];
+        
+        //        MBPolylineOverlay *ee =[[MBPolylineOverlay alloc] initWithPoints:points count:lon.count isClosed:NO];
+        //        [ee setWidth:15];
+        //        [ee setOutlineColor:0xFF000000];
+        //        [ee setStrokeStyle:ddd];
+        //        [ee setColor:0xFF2176EE];
+        //        [self.mapView addOverlay:ee];
+        free(points);
+     
+
+
+  
+      
+        
+        
+    }
     
+}
+
+#pragma mark -gc-02 转 84坐标
+- (CLLocationCoordinate2D)MarsGS2WorldGS:(CLLocationCoordinate2D)coordinate
+{
+    double gLat = coordinate.latitude;
+    double gLon = coordinate.longitude;
+    CLLocationCoordinate2D marsCoor = [self WorldGS2MarsGS:coordinate];
+    double dLat = marsCoor.latitude - gLat;
+    double dLon = marsCoor.longitude - gLon;
+    return CLLocationCoordinate2DMake(gLat - dLat, gLon - dLon);
+}
+
+
+
+- (CLLocationCoordinate2D)WorldGS2MarsGS:(CLLocationCoordinate2D)coordinate
+{
+    // a = 6378245.0, 1/f = 298.3
+    // b = a * (1 - f)
+    // ee = (a^2 - b^2) / a^2;
+    const double a = 6378245.0;
+    const double ee = 0.00669342162296594323;
+
+    double wgLat = coordinate.latitude;
+    double wgLon = coordinate.longitude;
+
+    double dLat = [self transformLatX:wgLon - 105.0 transformLatY:wgLat - 35.0];
+    double dLon = [self transformLonX:wgLon - 105.0 transformLonY:wgLat - 35.0];
     
    
+    double radLat = wgLat / 180.0 * M_PI;
+    double magic = sin(radLat);
+    magic = 1 - ee * magic * magic;
+    double sqrtMagic = sqrt(magic);
+    dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * M_PI);
+    dLon = (dLon * 180.0) / (a / sqrtMagic * cos(radLat) * M_PI);
     
-    
-    
-   }
+    return CLLocationCoordinate2DMake(wgLat + dLat, wgLon + dLon);
+}
+
+- (double) transformLatX:(double)x  transformLatY:(double) y
+{
+    double ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y +
+    0.2 * sqrt(fabs(x));
+    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 *sin(2.0 * x *M_PI)) * 2.0 /
+    3.0;
+    ret += (20.0 * sin(y * M_PI) + 40.0 *sin(y / 3.0 *M_PI)) * 2.0 / 3.0;
+    ret += (160.0 * sin(y / 12.0 * M_PI) + 320 *sin(y * M_PI / 30.0)) * 2.0 /
+    3.0;
+    return ret;
+}
+
+- (double) transformLonX:(double) x transformLonY:(double) y
+{
+    double ret = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * sqrt(fabs(x));
+    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 /
+    3.0;
+    ret += (20.0 * sin(x * M_PI) + 40.0 * sin(x / 3.0 * M_PI)) * 2.0 / 3.0;
+    ret += (150.0 * sin(x / 12.0 *M_PI) + 300.0 *sin(x / 30.0 * M_PI)) * 2.0 /
+    3.0;
+    return ret;
+}
+
+
+
+
+
 
 - (IBAction)drawLineNum:(UIButton *)sender {
     
@@ -228,9 +363,12 @@ BOOL state= YES;
             (*tempPoints).x = [lon[i] intValue];
             
             (*tempPoints).y = [lat[i] intValue];
+          
+            
+            tempPoints++;
             
             NSLog(@"%d,%d",(*tempPoints).x,(*tempPoints).y);
-            tempPoints++;
+
             //                MBPoint point = {centerPoint.x+i*10,centerPoint.y+i*10};
             //                MBIconOverlay *car = [[MBIconOverlay alloc]initWithFilePath:@"res/icons/1100.png" maintainPixelSize:YES];
             //                car.position = point;
@@ -278,6 +416,7 @@ BOOL state= YES;
 -(void)didGpsInfoUpdated:(MBGpsInfo *)info{
     if (self.mapView.authErrorType == MBAuthError_none) {
         self.mapView.worldCenter = info.pos;
+        NSLog(@"%d,%d",self.mapView.worldCenter.x,self.mapView.worldCenter.y);
         [self.gpsLocation stopUpdatingLocation];
     }
 }

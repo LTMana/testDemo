@@ -78,6 +78,8 @@
 		F1E197FA1CFBEB2C00205CB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E197D51CFBEA3200205CB3 /* CoreGraphics.framework */; };
 		F1E197FB1CFBEB2F00205CB3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E197D11CFBEA1C00205CB3 /* libsqlite3.dylib */; };
 		F1E197FC1CFBEB3700205CB3 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E197D31CFBEA2500205CB3 /* libc++.1.dylib */; };
+		F1F34ACF1D0E927D00512113 /* level17.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F34ACE1D0E927D00512113 /* level17.plist */; };
+		F1F34AD31D0EB88C00512113 /* drawLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1F34AD21D0EB88C00512113 /* drawLine.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +219,8 @@
 		F1E197E91CFBEAA300205CB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F1E197EB1CFBEAAB00205CB3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F1E197ED1CFBEACA00205CB3 /* iNaviCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iNaviCore.framework; sourceTree = "<group>"; };
+		F1F34ACE1D0E927D00512113 /* level17.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level17.plist; sourceTree = "<group>"; };
+		F1F34AD21D0EB88C00512113 /* drawLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drawLine.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,6 +547,8 @@
 		F1E197A81CFBE82300205CB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1F34AD21D0EB88C00512113 /* drawLine.txt */,
+				F1F34ACE1D0E927D00512113 /* level17.plist */,
 				F19F5DC11CFC0B820001176F /* Lib */,
 				F19F5DB61CFC0B550001176F /* Category */,
 				F19F5DB11CFBF08F0001176F /* data */,
@@ -682,6 +688,8 @@
 				F19F5DB31CFBF08F0001176F /* data in Resources */,
 				F19F5DB41CFBF08F0001176F /* res in Resources */,
 				F1E197B61CFBE82300205CB3 /* Images.xcassets in Resources */,
+				F1F34ACF1D0E927D00512113 /* level17.plist in Resources */,
+				F1F34AD31D0EB88C00512113 /* drawLine.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
