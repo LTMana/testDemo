@@ -41,6 +41,8 @@
 
 @property (nonatomic,strong) NSArray *pointSet;
 
+@property (nonatomic,strong)NSMutableDictionary *pointsDic;
+
 @end
 
 @implementation drawLineViewController
@@ -67,17 +69,48 @@
         // 判断授权
         _mapView.delegate = self;
         
-    NSString *filePath =  [[NSBundle mainBundle] pathForResource:@"drawLine.txt" ofType:nil];
+    NSString *filePath =  [[NSBundle mainBundle] pathForResource:@"level.plist" ofType:nil];
+
         
-        NSString *str=[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
-        NSArray *array = [str componentsSeparatedByString:@"move,"];
+        self.pointSet =[NSArray arrayWithContentsOfFile:filePath];
         
-        for (NSArray *arr1 in array) {
-            
-            NSLog(@"%@",arr1);
-        }
-        
-        
+//    NSString *filePath =  [[NSBundle mainBundle] pathForResource:@"drawlines.txt" ofType:nil];
+//        
+//        NSLog(@"%@",filePath);
+//        NSMutableArray *moveArr=[NSMutableArray array];
+//        
+//        
+//        NSString *str=[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+//        NSArray *array = [str componentsSeparatedByString:@"move,"];
+//        
+//        for (NSString *moveStr in array) {
+//            
+//            NSArray *array = [moveStr componentsSeparatedByString:@","];
+//            
+//            NSMutableArray *tempArr=[NSMutableArray array];
+//            for (int i=0; i<array.count; i++) {
+//                if (i%2==0) {
+//                    NSMutableDictionary *dic=[NSMutableDictionary dictionary];
+//                    self.pointsDic =dic;
+//                    [self.pointsDic setObject:array[i] forKey:@"lon"];
+//                }else{
+//                     [self.pointsDic setObject:array[i] forKey:@"lat"];
+//                    
+//                }
+//                
+//                
+//              
+//                [tempArr addObject:self.pointsDic];
+//                
+//            }
+//            
+//           
+//            [moveArr addObject:tempArr];
+//         
+//        }
+//        
+//        
+//        [moveArr writeToFile:@"/Users/liubotong/Desktop/level.plist" atomically:YES];
        // NSLog(@"array:%@",array);
     }
     
@@ -146,10 +179,11 @@ BOOL state= YES;
             (*tempPoints).x = [lonWithLat[@"lon"] intValue] *0.1;
             
             (*tempPoints).y =[lonWithLat[@"lat"] intValue]*0.1;
+             NSLog(@"MBPoint--%d,%d", (*tempPoints).x,(*tempPoints).y);
             tempPoints++;
 
             
-            NSLog(@"MBPoint--%d,%d", (*tempPoints).x,(*tempPoints).y);
+           
 
             
             

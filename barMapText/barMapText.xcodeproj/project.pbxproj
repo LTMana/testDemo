@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F113E5FF1D0697300096C136 /* drawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113E5FE1D0697300096C136 /* drawLineViewController.m */; };
+		F11B0A0D1D0EE51B003D21E7 /* level.plist in Resources */ = {isa = PBXBuildFile; fileRef = F11B0A0C1D0EE51B003D21E7 /* level.plist */; };
 		F19B6A121CFEBDD500BEACA3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A001CFEBDD500BEACA3 /* AFHTTPRequestOperation.m */; };
 		F19B6A131CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A021CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.m */; };
 		F19B6A141CFEBDD500BEACA3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6A041CFEBDD500BEACA3 /* AFHTTPSessionManager.m */; };
@@ -56,6 +57,7 @@
 		F19F5E081CFC0B820001176F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F5DF11CFC0B820001176F /* SVIndefiniteAnimatedView.m */; };
 		F19F5E091CFC0B820001176F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F19F5DF21CFC0B820001176F /* SVProgressHUD.bundle */; };
 		F19F5E0A1CFC0B820001176F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F19F5DF41CFC0B820001176F /* SVProgressHUD.m */; };
+		F1BECEAA1D0EDCC900D6A2EF /* drawlines.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1BECEA91D0EDCC900D6A2EF /* drawlines.txt */; };
 		F1E197AB1CFBE82300205CB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E197AA1CFBE82300205CB3 /* main.m */; };
 		F1E197AE1CFBE82300205CB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E197AD1CFBE82300205CB3 /* AppDelegate.m */; };
 		F1E197B41CFBE82300205CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E197B21CFBE82300205CB3 /* Main.storyboard */; };
@@ -79,7 +81,6 @@
 		F1E197FB1CFBEB2F00205CB3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E197D11CFBEA1C00205CB3 /* libsqlite3.dylib */; };
 		F1E197FC1CFBEB3700205CB3 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E197D31CFBEA2500205CB3 /* libc++.1.dylib */; };
 		F1F34ACF1D0E927D00512113 /* level17.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F34ACE1D0E927D00512113 /* level17.plist */; };
-		F1F34AD31D0EB88C00512113 /* drawLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1F34AD21D0EB88C00512113 /* drawLine.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 /* Begin PBXFileReference section */
 		F113E5FD1D0697300096C136 /* drawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawLineViewController.h; sourceTree = "<group>"; };
 		F113E5FE1D0697300096C136 /* drawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawLineViewController.m; sourceTree = "<group>"; };
+		F11B0A0C1D0EE51B003D21E7 /* level.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level.plist; sourceTree = "<group>"; };
 		F19B69FF1CFEBDD500BEACA3 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F19B6A001CFEBDD500BEACA3 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F19B6A011CFEBDD500BEACA3 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		F19F5DF21CFC0B820001176F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		F19F5DF31CFC0B820001176F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		F19F5DF41CFC0B820001176F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		F1BECEA91D0EDCC900D6A2EF /* drawlines.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drawlines.txt; sourceTree = "<group>"; };
 		F1E197A51CFBE82300205CB3 /* barMapText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barMapText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E197A91CFBE82300205CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1E197AA1CFBE82300205CB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,7 +223,6 @@
 		F1E197EB1CFBEAAB00205CB3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F1E197ED1CFBEACA00205CB3 /* iNaviCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iNaviCore.framework; sourceTree = "<group>"; };
 		F1F34ACE1D0E927D00512113 /* level17.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level17.plist; sourceTree = "<group>"; };
-		F1F34AD21D0EB88C00512113 /* drawLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drawLine.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,7 +549,8 @@
 		F1E197A81CFBE82300205CB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F1F34AD21D0EB88C00512113 /* drawLine.txt */,
+				F11B0A0C1D0EE51B003D21E7 /* level.plist */,
+				F1BECEA91D0EDCC900D6A2EF /* drawlines.txt */,
 				F1F34ACE1D0E927D00512113 /* level17.plist */,
 				F19F5DC11CFC0B820001176F /* Lib */,
 				F19F5DB61CFC0B550001176F /* Category */,
@@ -650,6 +653,7 @@
 				TargetAttributes = {
 					F1E197A41CFBE82300205CB3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9AP47RNLM6;
 					};
 					F1E197BD1CFBE82300205CB3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -684,12 +688,13 @@
 				F19F5E091CFC0B820001176F /* SVProgressHUD.bundle in Resources */,
 				F1E197B41CFBE82300205CB3 /* Main.storyboard in Resources */,
 				F1E197B91CFBE82300205CB3 /* LaunchScreen.xib in Resources */,
+				F11B0A0D1D0EE51B003D21E7 /* level.plist in Resources */,
 				F19F5E031CFC0B820001176F /* MJRefresh.bundle in Resources */,
 				F19F5DB31CFBF08F0001176F /* data in Resources */,
 				F19F5DB41CFBF08F0001176F /* res in Resources */,
 				F1E197B61CFBE82300205CB3 /* Images.xcassets in Resources */,
 				F1F34ACF1D0E927D00512113 /* level17.plist in Resources */,
-				F1F34AD31D0EB88C00512113 /* drawLine.txt in Resources */,
+				F1BECEAA1D0EDCC900D6A2EF /* drawlines.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +886,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/barMapText",
@@ -890,6 +897,7 @@
 				INFOPLIST_FILE = barMapText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -897,6 +905,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/barMapText",
@@ -906,6 +916,7 @@
 				INFOPLIST_FILE = barMapText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
