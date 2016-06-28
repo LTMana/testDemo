@@ -43,9 +43,14 @@
 
 @property (nonatomic,strong)NSMutableDictionary *pointsDic;
 
+@property (nonatomic,strong)NSMutableArray *polyLineArr;
+
 @end
 
 @implementation drawLineViewController
+
+
+
 
 
 
@@ -55,6 +60,15 @@
 
 }
 
+
+-(NSMutableArray *)polyLineArr
+{
+    if (_polyLineArr ==nil) {
+        _polyLineArr =[NSMutableArray array];
+    }
+    
+    return _polyLineArr;
+}
 
 
 
@@ -158,127 +172,190 @@ BOOL state= YES;
    
     
     static int index=0;
-    for (NSArray *pointsArr in self.pointSet) {
+   
+    
+    for (int i=0; i<self.pointSet.count; i++) {
         index ++;
-        NSLog(@"执行次数%d",index);
+        
+        NSArray *pointsArr =self.pointSet[i];
+        //NSLog(@"执行次数%d",index);
         MBPoint* points = (MBPoint*)malloc(sizeof(MBPoint)*(pointsArr.count));
         
         MBPoint*tempPoints = points;
         for (NSDictionary *lonWithLat in pointsArr) {
             
-          double lon  = [lonWithLat[@"lon"] intValue]*0.000001;
-            
-         double lat = [lonWithLat[@"lat"] intValue]*0.000001;
-
-            
-//               NSLog(@"GC-02--%f,%f",lon , lat);
-            
-            CLLocationCoordinate2D coordinate =[self  MarsGS2WorldGS:CLLocationCoordinate2DMake(lat, lon)];
-            
-            
             (*tempPoints).x = [lonWithLat[@"lon"] intValue] *0.1;
             
             (*tempPoints).y =[lonWithLat[@"lat"] intValue]*0.1;
-             NSLog(@"MBPoint--%d,%d", (*tempPoints).x,(*tempPoints).y);
             tempPoints++;
-
-            
-           
-
-            
-            
-//                        NSLog(@"WD-84--%f,%f",coordinate.longitude , coordinate.latitude);
-            
             
         }
         
         
+        MBPolylineOverlay *polylineOverlay =[[MBPolylineOverlay alloc] initWithPoints:points count:pointsArr.count  isClosed:NO];
+
         
-        self.polylineOverlay = [[MBPolylineOverlay alloc] initWithPoints:points count:pointsArr.count isClosed:NO];
-        [self.polylineOverlay setWidth:15];
-        [self.polylineOverlay setOutlineColor:0xFF000000];
-        [self.polylineOverlay setStrokeStyle:MBStrokeStyle_route];
-        [self.polylineOverlay setColor:0xFF2176EE];
-        [self.mapView addOverlay:self.polylineOverlay];
+        if (i%3==0) {
+            [polylineOverlay setOutlineColor:0xFF0000FF];
+            [polylineOverlay setColor:0xFF0000FF];
+        }
+        if (i%3==1) {
+            [polylineOverlay setOutlineColor:0xFF00FF00];
+            [polylineOverlay setColor:0xFF00FF00];
+        }
         
-        //        MBPolylineOverlay *ee =[[MBPolylineOverlay alloc] initWithPoints:points count:lon.count isClosed:NO];
-        //        [ee setWidth:15];
-        //        [ee setOutlineColor:0xFF000000];
-        //        [ee setStrokeStyle:ddd];
-        //        [ee setColor:0xFF2176EE];
-        //        [self.mapView addOverlay:ee];
+        if (i%3==2) {
+            [polylineOverlay setOutlineColor:0xFF00FFFF];
+            [polylineOverlay setColor:0xFF00FFFF];
+            
+        }
+        
+        
+        [polylineOverlay setWidth:7];
+        [polylineOverlay setStrokeStyle:MBStrokeStyle_tunnel];
+        
+        [self.mapView addOverlay:polylineOverlay];
+        
         free(points);
-     
+        
+        [self.polyLineArr addObject:polylineOverlay];
 
-
-  
-      
         
         
+        
+//        self.polylineOverlay = [[MBPolylineOverlay alloc] initWithPoints:points count:pointsArr.count isClosed:NO];
+//        
+//        if (i%3==0) {
+//            [self.polylineOverlay setOutlineColor:0xFF0000FF];
+//            [self.polylineOverlay setColor:0xFF0000FF];
+//        }
+//        if (i%3==1) {
+//            [self.polylineOverlay setOutlineColor:0xFF00FF00];
+//            [self.polylineOverlay setColor:0xFF00FF00];
+//        }
+// 
+//        if (i%3==2) {
+//            [self.polylineOverlay setOutlineColor:0xFF00FFFF];
+//            [self.polylineOverlay setColor:0xFF00FFFF];
+//
+//        }
+//        
+//        
+//        [self.polylineOverlay setWidth:9];
+//               [self.polylineOverlay setStrokeStyle:MBStrokeStyle_tunnel];
+//        
+//        [self.mapView addOverlay:self.polylineOverlay];
+//        
+//        free(points);
+//        
+//        [self.polyLineArr addObject:self.polylineOverlay];
+        
+
     }
     
-}
-
-#pragma mark -gc-02 转 84坐标
-- (CLLocationCoordinate2D)MarsGS2WorldGS:(CLLocationCoordinate2D)coordinate
-{
-    double gLat = coordinate.latitude;
-    double gLon = coordinate.longitude;
-    CLLocationCoordinate2D marsCoor = [self WorldGS2MarsGS:coordinate];
-    double dLat = marsCoor.latitude - gLat;
-    double dLon = marsCoor.longitude - gLon;
-    return CLLocationCoordinate2DMake(gLat - dLat, gLon - dLon);
-}
-
-
-
-- (CLLocationCoordinate2D)WorldGS2MarsGS:(CLLocationCoordinate2D)coordinate
-{
-    // a = 6378245.0, 1/f = 298.3
-    // b = a * (1 - f)
-    // ee = (a^2 - b^2) / a^2;
-    const double a = 6378245.0;
-    const double ee = 0.00669342162296594323;
-
-    double wgLat = coordinate.latitude;
-    double wgLon = coordinate.longitude;
-
-    double dLat = [self transformLatX:wgLon - 105.0 transformLatY:wgLat - 35.0];
-    double dLon = [self transformLonX:wgLon - 105.0 transformLonY:wgLat - 35.0];
     
-   
-    double radLat = wgLat / 180.0 * M_PI;
-    double magic = sin(radLat);
-    magic = 1 - ee * magic * magic;
-    double sqrtMagic = sqrt(magic);
-    dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * M_PI);
-    dLon = (dLon * 180.0) / (a / sqrtMagic * cos(radLat) * M_PI);
+//    
+//        for (NSArray *pointsArr in self.pointSet) {
+//            index ++;
+//           
+//            //NSLog(@"执行次数%d",index);
+//            MBPoint* points = (MBPoint*)malloc(sizeof(MBPoint)*(pointsArr.count));
+//            
+//            MBPoint*tempPoints = points;
+//            for (NSDictionary *lonWithLat in pointsArr) {
+//
+//                (*tempPoints).x = [lonWithLat[@"lon"] intValue] *0.1;
+//                
+//                (*tempPoints).y =[lonWithLat[@"lat"] intValue]*0.1;
+//                tempPoints++;
+//                
+//            }
+//            
+//            self.polylineOverlay = [[MBPolylineOverlay alloc] initWithPoints:points count:pointsArr.count isClosed:NO];
+//               
+//                
+//                [self.polylineOverlay setWidth:13];
+//                [self.polylineOverlay setOutlineColor:0xFF0000FF];
+//                [self.polylineOverlay setStrokeStyle:MBStrokeStyle_tunnel];
+//                [self.polylineOverlay setColor:0xFF0000FF];
+//                [self.mapView addOverlay:self.polylineOverlay];
+//                
+//                 free(points);
+//
+//            
+//                 
+//            
+//            
+//            
+//            
+//            
+//            
+//        }
     
-    return CLLocationCoordinate2DMake(wgLat + dLat, wgLon + dLon);
-}
 
-- (double) transformLatX:(double)x  transformLatY:(double) y
-{
-    double ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y +
-    0.2 * sqrt(fabs(x));
-    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 *sin(2.0 * x *M_PI)) * 2.0 /
-    3.0;
-    ret += (20.0 * sin(y * M_PI) + 40.0 *sin(y / 3.0 *M_PI)) * 2.0 / 3.0;
-    ret += (160.0 * sin(y / 12.0 * M_PI) + 320 *sin(y * M_PI / 30.0)) * 2.0 /
-    3.0;
-    return ret;
-}
 
-- (double) transformLonX:(double) x transformLonY:(double) y
-{
-    double ret = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * sqrt(fabs(x));
-    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 /
-    3.0;
-    ret += (20.0 * sin(x * M_PI) + 40.0 * sin(x / 3.0 * M_PI)) * 2.0 / 3.0;
-    ret += (150.0 * sin(x / 12.0 *M_PI) + 300.0 *sin(x / 30.0 * M_PI)) * 2.0 /
-    3.0;
-    return ret;
-}
+   }
+
+//#pragma mark -gc-02 转 84坐标
+//- (CLLocationCoordinate2D)MarsGS2WorldGS:(CLLocationCoordinate2D)coordinate
+//{
+//    double gLat = coordinate.latitude;
+//    double gLon = coordinate.longitude;
+//    CLLocationCoordinate2D marsCoor = [self WorldGS2MarsGS:coordinate];
+//    double dLat = marsCoor.latitude - gLat;
+//    double dLon = marsCoor.longitude - gLon;
+//    return CLLocationCoordinate2DMake(gLat - dLat, gLon - dLon);
+//}
+//
+//
+//
+//- (CLLocationCoordinate2D)WorldGS2MarsGS:(CLLocationCoordinate2D)coordinate
+//{
+//    // a = 6378245.0, 1/f = 298.3
+//    // b = a * (1 - f)
+//    // ee = (a^2 - b^2) / a^2;
+//    const double a = 6378245.0;
+//    const double ee = 0.00669342162296594323;
+//
+//    double wgLat = coordinate.latitude;
+//    double wgLon = coordinate.longitude;
+//
+//    double dLat = [self transformLatX:wgLon - 105.0 transformLatY:wgLat - 35.0];
+//    double dLon = [self transformLonX:wgLon - 105.0 transformLonY:wgLat - 35.0];
+//    
+//   
+//    double radLat = wgLat / 180.0 * M_PI;
+//    double magic = sin(radLat);
+//    magic = 1 - ee * magic * magic;
+//    double sqrtMagic = sqrt(magic);
+//    dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * M_PI);
+//    dLon = (dLon * 180.0) / (a / sqrtMagic * cos(radLat) * M_PI);
+//    
+//    return CLLocationCoordinate2DMake(wgLat + dLat, wgLon + dLon);
+//}
+//
+//- (double) transformLatX:(double)x  transformLatY:(double) y
+//{
+//    double ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y +
+//    0.2 * sqrt(fabs(x));
+//    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 *sin(2.0 * x *M_PI)) * 2.0 /
+//    3.0;
+//    ret += (20.0 * sin(y * M_PI) + 40.0 *sin(y / 3.0 *M_PI)) * 2.0 / 3.0;
+//    ret += (160.0 * sin(y / 12.0 * M_PI) + 320 *sin(y * M_PI / 30.0)) * 2.0 /
+//    3.0;
+//    return ret;
+//}
+//
+//- (double) transformLonX:(double) x transformLonY:(double) y
+//{
+//    double ret = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * sqrt(fabs(x));
+//    ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 /
+//    3.0;
+//    ret += (20.0 * sin(x * M_PI) + 40.0 * sin(x / 3.0 * M_PI)) * 2.0 / 3.0;
+//    ret += (150.0 * sin(x / 12.0 *M_PI) + 300.0 *sin(x / 30.0 * M_PI)) * 2.0 /
+//    3.0;
+//    return ret;
+//}
 
 
 
@@ -410,7 +487,7 @@ BOOL state= YES;
             
         }
         
-        
+        MBPolylineOverlay *polylineOverlay =[[MBPolylineOverlay alloc] initWithPoints:points count:lon.count isClosed:NO];
         
         self.polylineOverlay = [[MBPolylineOverlay alloc] initWithPoints:points count:lon.count isClosed:NO];
         [self.polylineOverlay setWidth:15];
@@ -436,10 +513,26 @@ BOOL state= YES;
 }
 
 
+- (IBAction)Traffic:(UIButton *)sender {
+     sender.selected =!sender.selected;
+    if ([sender isSelected]) {
+        [self removeLine];
+        
+        self.mapView.enableTmc = YES;
+    } else {
+        self.mapView.enableTmc = NO;
+    }
+}
+
+
+
 - (IBAction)removeLine {
     
+  
    
-    
+    [self.mapView removeOverlays:self.polyLineArr];
+   
+    self.polyLineArr =nil;
 
     
 }

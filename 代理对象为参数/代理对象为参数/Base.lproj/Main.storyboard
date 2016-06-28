@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIZ-hf-njZ" customClass="RedView">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="VcN-cY-Hg6"/>
+                                    <constraint firstAttribute="width" constant="200" id="eWr-JS-KY9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8J-UK-KU4" customClass="BlueView">
+                                <rect key="frame" x="192" y="45" width="216" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-DY-uQk">
+                                        <rect key="frame" x="85" y="45" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="redCilck:" destination="n8J-UK-KU4" eventType="touchUpInside" id="DRL-N2-dIO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="centerX" secondItem="n8J-UK-KU4" secondAttribute="centerX" id="DKi-R8-SAm"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="leading" secondItem="n8J-UK-KU4" secondAttribute="leading" constant="8" id="HgZ-Oy-t7X"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="trailing" secondItem="n8J-UK-KU4" secondAttribute="trailing" constant="-8" id="J4y-xQ-iRc"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="top" secondItem="n8J-UK-KU4" secondAttribute="top" constant="172" id="PGv-NV-Tqy"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="height" secondItem="n8J-UK-KU4" secondAttribute="height" constant="80" id="YTb-LE-AJQ"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="centerX" secondItem="n8J-UK-KU4" secondAttribute="centerX" id="ZmV-65-ymY"/>
+                            <constraint firstItem="jIZ-hf-njZ" firstAttribute="top" secondItem="n8J-UK-KU4" secondAttribute="bottom" constant="35" id="iRF-KN-SMq"/>
+                            <constraint firstAttribute="centerX" secondItem="jIZ-hf-njZ" secondAttribute="centerX" id="sAG-42-pmJ"/>
+                            <constraint firstAttribute="centerY" secondItem="jIZ-hf-njZ" secondAttribute="centerY" id="toj-rr-9NX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PGv-NV-Tqy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="redview" destination="n8J-UK-KU4" id="fih-jK-2j2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

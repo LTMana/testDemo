@@ -383,25 +383,13 @@
     
     for (int i = 0; i < dtmTile.meshCnt; i++)
     {
-       // CNMKDTMMeshData *meshData = dtmTile.meshArrary[i];
+        CNMKDTMMeshData *meshData = dtmTile.meshArrary[i];
         
         for (CNMKMeshModel *mesh in meshinfo) {
-            iRticMatchCnt = [self match2DtmMesh:dtmTile.meshArrary[i] tileId:mesh];
+            iRticMatchCnt = [self match2DtmMesh:meshData tileId:mesh];
 
         }
-   //        for (int j = 0 ; j < meshinfo.count; j++)
-//        {
-//            CNMKMeshModel *mesh=meshinfo[j];
-//            
-//         iRticMatchCnt =[self match2DtmMesh:meshData matchInStatInfo:mesh];
-//            if(iRticMatchCnt > 0){
-//                dtmTile.matchState =YES;
-//                break;
-//            }
-
-  //      }
-        
-
+  
     }
     
     if (iRticMatchCnt>0) {
@@ -416,9 +404,14 @@
     //NSLog(@"function_start=%s",__func__);
     
     int  rticMatchCnt = 0;
-    if (dtmMesh == NULL) {
+    if (dtmMesh == NULL || JamMesh ==NULL) {
         return 0;
     }
+    if ([JamMesh.meshId intValue] != dtmMesh.mash_id) {
+        return 0;
+    }
+
+    
 //    for (CNMKMeshModel *mesh in trafficObjOld) {
     
         for (int i = 0; i < JamMesh.rtics.count; i++)
@@ -433,11 +426,11 @@
 
                
                 
-                int rticID=dtmRticData.rtic_id;
+                
                 
                 
                                 //DTMTile
-                if (rticID == [rticInfo.rticId intValue])
+                if (rticInfo.rticId == dtmRticData.rtic_id;)
                 {
                     
                     

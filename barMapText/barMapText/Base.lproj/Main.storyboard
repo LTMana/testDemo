@@ -189,15 +189,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-2b-8Dn">
-                                <rect key="frame" x="30" y="401" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-2b-8Dn">
+                                <rect key="frame" x="30" y="401" width="60" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="1ou-4Y-HAn"/>
+                                    <constraint firstAttribute="width" constant="60" id="1ou-4Y-HAn"/>
                                     <constraint firstAttribute="height" constant="30" id="ftQ-9E-kOe"/>
                                 </constraints>
-                                <state key="normal" title="画线">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="模拟路况">
                                     <color key="titleColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -205,15 +206,16 @@
                                     <action selector="drawLine" destination="xka-zQ-zfV" eventType="touchUpInside" id="2og-aj-C2w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-oX-rKj">
-                                <rect key="frame" x="30" y="452" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-oX-rKj">
+                                <rect key="frame" x="30" y="452" width="60" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="mZa-1R-sX3"/>
+                                    <constraint firstAttribute="width" constant="60" id="mZa-1R-sX3"/>
                                     <constraint firstAttribute="height" constant="30" id="zdz-WH-eoe"/>
                                 </constraints>
-                                <state key="normal" title="移除">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="移除路况">
                                     <color key="titleColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -221,88 +223,36 @@
                                     <action selector="removeLine" destination="xka-zQ-zfV" eventType="touchUpInside" id="eFe-si-8ck"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hs-hl-OKf">
-                                <rect key="frame" x="30" y="306" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-FJ-Kwp">
+                                <rect key="frame" x="30" y="345" width="60" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="VFF-bY-0mr"/>
-                                    <constraint firstAttribute="width" constant="46" id="dPd-aE-3Iv"/>
+                                    <constraint firstAttribute="width" constant="60" id="BKs-qL-pIe"/>
+                                    <constraint firstAttribute="height" constant="30" id="sO9-JB-Q8x"/>
                                 </constraints>
-                                <state key="normal" title="2">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.79881465519999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="图吧TMC">
+                                    <color key="titleColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="drawLineNum:" destination="xka-zQ-zfV" eventType="touchUpInside" id="c5M-0k-edh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0c-hc-xDQ">
-                                <rect key="frame" x="30" y="258" width="46" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ya5-70-HXc"/>
-                                    <constraint firstAttribute="width" constant="46" id="ebk-E2-a8U"/>
-                                </constraints>
-                                <state key="normal" title="3">
+                                <state key="selected" title="关闭TMC">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.79881465519999995" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="drawLineNum:" destination="xka-zQ-zfV" eventType="touchUpInside" id="ksU-xF-wQM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-ib-EDp">
-                                <rect key="frame" x="30" y="207" width="46" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9tG-fp-IMh"/>
-                                    <constraint firstAttribute="width" constant="46" id="WT8-R8-SjL"/>
-                                </constraints>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.79881465519999995" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="drawLineNum:" destination="xka-zQ-zfV" eventType="touchUpInside" id="d9e-gO-i1i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVt-hx-AVb">
-                                <rect key="frame" x="30" y="353" width="46" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.77364201570000002" green="0.77364201570000002" blue="0.77364201570000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="BIi-dg-xhI"/>
-                                    <constraint firstAttribute="height" constant="30" id="CG2-3P-d5X"/>
-                                </constraints>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.79881465519999995" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="drawLineNum:" destination="xka-zQ-zfV" eventType="touchUpInside" id="eys-li-aR6"/>
+                                    <action selector="Traffic:" destination="xka-zQ-zfV" eventType="touchUpInside" id="D7R-Sg-lBZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9hs-hl-OKf" firstAttribute="top" secondItem="t0c-hc-xDQ" secondAttribute="bottom" constant="18" id="0f4-9m-oGo"/>
                             <constraint firstItem="kzh-2b-8Dn" firstAttribute="leading" secondItem="POD-nt-1ep" secondAttribute="leading" constant="30" id="8Ao-lE-75g"/>
-                            <constraint firstItem="t0c-hc-xDQ" firstAttribute="top" secondItem="Nvn-ib-EDp" secondAttribute="bottom" constant="21" id="AFm-8w-NjJ"/>
                             <constraint firstItem="5g3-oX-rKj" firstAttribute="top" secondItem="kzh-2b-8Dn" secondAttribute="bottom" constant="21" id="AGa-PZ-XzF"/>
-                            <constraint firstItem="kzh-2b-8Dn" firstAttribute="top" secondItem="cVt-hx-AVb" secondAttribute="bottom" constant="18" id="Atq-mq-5st"/>
-                            <constraint firstItem="9hs-hl-OKf" firstAttribute="leading" secondItem="t0c-hc-xDQ" secondAttribute="leading" id="Cp7-th-pZj"/>
-                            <constraint firstItem="Nvn-ib-EDp" firstAttribute="leading" secondItem="t0c-hc-xDQ" secondAttribute="leading" id="Xj3-Pi-sCa"/>
                             <constraint firstItem="5g3-oX-rKj" firstAttribute="leading" secondItem="kzh-2b-8Dn" secondAttribute="leading" id="eJV-O6-kYm"/>
-                            <constraint firstItem="cVt-hx-AVb" firstAttribute="leading" secondItem="kzh-2b-8Dn" secondAttribute="leading" id="eQG-by-yoM"/>
-                            <constraint firstItem="9hs-hl-OKf" firstAttribute="leading" secondItem="cVt-hx-AVb" secondAttribute="leading" id="niu-Fk-mkx"/>
-                            <constraint firstItem="cVt-hx-AVb" firstAttribute="top" secondItem="9hs-hl-OKf" secondAttribute="bottom" constant="17" id="piw-IU-H7X"/>
+                            <constraint firstItem="kzh-2b-8Dn" firstAttribute="trailing" secondItem="3FY-FJ-Kwp" secondAttribute="trailing" id="hBk-8e-fcG"/>
+                            <constraint firstItem="kzh-2b-8Dn" firstAttribute="leading" secondItem="3FY-FJ-Kwp" secondAttribute="leading" id="job-kH-U5E"/>
+                            <constraint firstItem="kzh-2b-8Dn" firstAttribute="top" secondItem="3FY-FJ-Kwp" secondAttribute="bottom" constant="26" id="nJV-PD-nxv"/>
                             <constraint firstItem="9BC-7Z-zgC" firstAttribute="top" secondItem="kzh-2b-8Dn" secondAttribute="bottom" constant="169" id="r4a-Rk-XXq"/>
                         </constraints>
                     </view>

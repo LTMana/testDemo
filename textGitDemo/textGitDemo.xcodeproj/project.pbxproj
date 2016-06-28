@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F100B4571D0FFD170047CFEA /* data in Resources */ = {isa = PBXBuildFile; fileRef = F100B4561D0FFD170047CFEA /* data */; };
+		F100B45E1D0FFD3D0047CFEA /* AccountInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = F100B45C1D0FFD3D0047CFEA /* AccountInfo.txt */; };
+		F100B45F1D0FFD3D0047CFEA /* tts.txt in Resources */ = {isa = PBXBuildFile; fileRef = F100B45D1D0FFD3D0047CFEA /* tts.txt */; };
+		F100B46A1D0FFD480047CFEA /* libcurl_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4611D0FFD480047CFEA /* libcurl_device_simulator_iOS5.1.1.a */; };
+		F100B46B1D0FFD480047CFEA /* libhci_sys_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4621D0FFD480047CFEA /* libhci_sys_device_simulator_iOS5.1.1.a */; };
+		F100B46C1D0FFD480047CFEA /* libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4631D0FFD480047CFEA /* libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a */; };
+		F100B46D1D0FFD480047CFEA /* libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4641D0FFD480047CFEA /* libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a */; };
+		F100B46E1D0FFD480047CFEA /* libhci_tts_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4651D0FFD480047CFEA /* libhci_tts_device_simulator_iOS5.1.1.a */; };
+		F100B46F1D0FFD480047CFEA /* libhci_tts_local_synth_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4661D0FFD480047CFEA /* libhci_tts_local_synth_device_simulator_iOS5.1.1.a */; };
+		F100B4701D0FFD480047CFEA /* libhci_tts_player_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4671D0FFD480047CFEA /* libhci_tts_player_device_simulator_iOS5.1.1.a */; };
+		F100B4711D0FFD480047CFEA /* libjtopus_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4681D0FFD480047CFEA /* libjtopus_device_simulator_iOS5.1.1.a */; };
+		F100B4721D0FFD480047CFEA /* libjtspeex_device_simulator_iOS5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4691D0FFD480047CFEA /* libjtspeex_device_simulator_iOS5.1.1.a */; };
+		F100B4741D0FFD770047CFEA /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4731D0FFD770047CFEA /* libiconv.dylib */; };
+		F100B4761D0FFD860047CFEA /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4751D0FFD860047CFEA /* libstdc++.dylib */; };
+		F100B4781D0FFD930047CFEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4771D0FFD930047CFEA /* SystemConfiguration.framework */; };
+		F100B47A1D0FFD9F0047CFEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4791D0FFD9F0047CFEA /* CoreLocation.framework */; };
+		F100B47C1D0FFDA80047CFEA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B47B1D0FFDA80047CFEA /* AudioToolbox.framework */; };
+		F100B47E1D0FFDB60047CFEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B47D1D0FFDB60047CFEA /* UIKit.framework */; };
+		F100B4801D0FFDBF0047CFEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B47F1D0FFDBF0047CFEA /* Foundation.framework */; };
+		F100B4821D0FFDC90047CFEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F100B4811D0FFDC90047CFEA /* CoreGraphics.framework */; };
 		F10A4BDC1CE1AF4E001F9846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F10A4BDB1CE1AF4E001F9846 /* main.m */; };
 		F10A4BDF1CE1AF4E001F9846 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F10A4BDE1CE1AF4E001F9846 /* AppDelegate.m */; };
 		F10A4BE21CE1AF4E001F9846 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10A4BE11CE1AF4E001F9846 /* ViewController.m */; };
@@ -28,6 +48,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F100B4561D0FFD170047CFEA /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		F100B4591D0FFD250047CFEA /* hci_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_sys.h; sourceTree = "<group>"; };
+		F100B45A1D0FFD250047CFEA /* hci_tts_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_tts_player.h; sourceTree = "<group>"; };
+		F100B45C1D0FFD3D0047CFEA /* AccountInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AccountInfo.txt; sourceTree = "<group>"; };
+		F100B45D1D0FFD3D0047CFEA /* tts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tts.txt; sourceTree = "<group>"; };
+		F100B4611D0FFD480047CFEA /* libcurl_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4621D0FFD480047CFEA /* libhci_sys_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_sys_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4631D0FFD480047CFEA /* libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4641D0FFD480047CFEA /* libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4651D0FFD480047CFEA /* libhci_tts_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_tts_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4661D0FFD480047CFEA /* libhci_tts_local_synth_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_tts_local_synth_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4671D0FFD480047CFEA /* libhci_tts_player_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhci_tts_player_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4681D0FFD480047CFEA /* libjtopus_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjtopus_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4691D0FFD480047CFEA /* libjtspeex_device_simulator_iOS5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjtspeex_device_simulator_iOS5.1.1.a; sourceTree = "<group>"; };
+		F100B4731D0FFD770047CFEA /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F100B4751D0FFD860047CFEA /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F100B4771D0FFD930047CFEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F100B4791D0FFD9F0047CFEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F100B47B1D0FFDA80047CFEA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F100B47D1D0FFDB60047CFEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F100B47F1D0FFDBF0047CFEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F100B4811D0FFDC90047CFEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F10A4BD61CE1AF4E001F9846 /* textGitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textGitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10A4BDA1CE1AF4E001F9846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10A4BDB1CE1AF4E001F9846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F100B4821D0FFDC90047CFEA /* CoreGraphics.framework in Frameworks */,
+				F100B4801D0FFDBF0047CFEA /* Foundation.framework in Frameworks */,
+				F100B47E1D0FFDB60047CFEA /* UIKit.framework in Frameworks */,
+				F100B47C1D0FFDA80047CFEA /* AudioToolbox.framework in Frameworks */,
+				F100B47A1D0FFD9F0047CFEA /* CoreLocation.framework in Frameworks */,
+				F100B4781D0FFD930047CFEA /* SystemConfiguration.framework in Frameworks */,
+				F100B4761D0FFD860047CFEA /* libstdc++.dylib in Frameworks */,
+				F100B4741D0FFD770047CFEA /* libiconv.dylib in Frameworks */,
+				F100B46D1D0FFD480047CFEA /* libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B4721D0FFD480047CFEA /* libjtspeex_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B4701D0FFD480047CFEA /* libhci_tts_player_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B46C1D0FFD480047CFEA /* libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B4711D0FFD480047CFEA /* libjtopus_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B46A1D0FFD480047CFEA /* libcurl_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B46E1D0FFD480047CFEA /* libhci_tts_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B46F1D0FFD480047CFEA /* libhci_tts_local_synth_device_simulator_iOS5.1.1.a in Frameworks */,
+				F100B46B1D0FFD480047CFEA /* libhci_sys_device_simulator_iOS5.1.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +122,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F100B4581D0FFD250047CFEA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F100B4591D0FFD250047CFEA /* hci_sys.h */,
+				F100B45A1D0FFD250047CFEA /* hci_tts_player.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F100B45B1D0FFD3D0047CFEA /* testdata */ = {
+			isa = PBXGroup;
+			children = (
+				F100B45C1D0FFD3D0047CFEA /* AccountInfo.txt */,
+				F100B45D1D0FFD3D0047CFEA /* tts.txt */,
+			);
+			path = testdata;
+			sourceTree = "<group>";
+		};
+		F100B4601D0FFD480047CFEA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F100B4611D0FFD480047CFEA /* libcurl_device_simulator_iOS5.1.1.a */,
+				F100B4621D0FFD480047CFEA /* libhci_sys_device_simulator_iOS5.1.1.a */,
+				F100B4631D0FFD480047CFEA /* libhci_tts_cloud_local_adapter_device_simulator_iOS5.1.1.a */,
+				F100B4641D0FFD480047CFEA /* libhci_tts_cloud_synth_device_simulator_iOS5.1.1.a */,
+				F100B4651D0FFD480047CFEA /* libhci_tts_device_simulator_iOS5.1.1.a */,
+				F100B4661D0FFD480047CFEA /* libhci_tts_local_synth_device_simulator_iOS5.1.1.a */,
+				F100B4671D0FFD480047CFEA /* libhci_tts_player_device_simulator_iOS5.1.1.a */,
+				F100B4681D0FFD480047CFEA /* libjtopus_device_simulator_iOS5.1.1.a */,
+				F100B4691D0FFD480047CFEA /* libjtspeex_device_simulator_iOS5.1.1.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		F10A4BCD1CE1AF4E001F9846 = {
 			isa = PBXGroup;
 			children = (
+				F100B4811D0FFDC90047CFEA /* CoreGraphics.framework */,
+				F100B47F1D0FFDBF0047CFEA /* Foundation.framework */,
+				F100B47D1D0FFDB60047CFEA /* UIKit.framework */,
+				F100B47B1D0FFDA80047CFEA /* AudioToolbox.framework */,
+				F100B4791D0FFD9F0047CFEA /* CoreLocation.framework */,
+				F100B4771D0FFD930047CFEA /* SystemConfiguration.framework */,
+				F100B4751D0FFD860047CFEA /* libstdc++.dylib */,
+				F100B4731D0FFD770047CFEA /* libiconv.dylib */,
 				F10A4BD81CE1AF4E001F9846 /* textGitDemo */,
 				F10A4BF21CE1AF4E001F9846 /* textGitDemoTests */,
 				F10A4BD71CE1AF4E001F9846 /* Products */,
@@ -84,6 +185,9 @@
 		F10A4BD81CE1AF4E001F9846 /* textGitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F100B45B1D0FFD3D0047CFEA /* testdata */,
+				F100B4581D0FFD250047CFEA /* include */,
+				F100B4561D0FFD170047CFEA /* data */,
 				F10A4BDD1CE1AF4E001F9846 /* AppDelegate.h */,
 				F10A4BDE1CE1AF4E001F9846 /* AppDelegate.m */,
 				F10A4BE01CE1AF4E001F9846 /* ViewController.h */,
@@ -101,6 +205,7 @@
 		F10A4BD91CE1AF4E001F9846 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F100B4601D0FFD480047CFEA /* lib */,
 				F10A4BDA1CE1AF4E001F9846 /* Info.plist */,
 				F10A4BDB1CE1AF4E001F9846 /* main.m */,
 			);
@@ -204,9 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F100B45F1D0FFD3D0047CFEA /* tts.txt in Resources */,
 				F10A4BE51CE1AF4E001F9846 /* Main.storyboard in Resources */,
 				F10A4BEA1CE1AF4E001F9846 /* LaunchScreen.xib in Resources */,
+				F100B4571D0FFD170047CFEA /* data in Resources */,
 				F10A4BE71CE1AF4E001F9846 /* Images.xcassets in Resources */,
+				F100B45E1D0FFD3D0047CFEA /* AccountInfo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +465,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = textGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/textGitDemo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,6 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = textGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/textGitDemo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

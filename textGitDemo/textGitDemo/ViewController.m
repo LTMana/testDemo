@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "drawB.h"
+#import "hci_tts_player.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
 //    drawB *d=[[drawB alloc]init];
 //    d.frame =self.view.bounds;
 //    
