@@ -131,6 +131,21 @@
     return _mapView;
 }
 
+-(void)writeOrReadFile
+{
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
+    
+    NSString *fileName = [path stringByAppendingPathComponent:@"123.plist"];
+    
+    NSArray *array = @[@ "123" , @ "456" , @ "789" ];
+    [array writeToFile:fileName atomically:YES];
+    
+    NSArray *result = [NSArray arrayWithContentsOfFile:fileName];
+    NSLog(@"%@",result);
+}
+
+
+
 /*
  * 初始化地图
  */

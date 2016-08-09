@@ -1,2 +1,4 @@
 platform :ios, '8.0'
-pod 'TIMapboxGeocoder', '~> 0.2.0'
+target 'mapBox' do
+  pod 'Mapbox-iOS-SDK', '~> 3.3.3'
+end

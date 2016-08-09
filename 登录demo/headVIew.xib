@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="239"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7r-di-QIy">
+                    <rect key="frame" x="0.0" y="164" width="412" height="75"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.20161495660000001" blue="0.16767190779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Kb4-HM-ceu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJi-DA-Cd2">
+                    <rect key="frame" x="25" y="25" width="60" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="PU8-qe-Ots"/>
+                        <constraint firstAttribute="width" constant="60" id="qyC-iD-NO8"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-ay-wP5">
+                    <rect key="frame" x="104" y="25" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyq-90-B8n">
+                    <rect key="frame" x="104" y="44" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iJi-DA-Cd2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="5Wt-4T-69d"/>
+                <constraint firstItem="iJi-DA-Cd2" firstAttribute="leading" secondItem="s7r-di-QIy" secondAttribute="trailing" id="AbQ-oK-XNG"/>
+                <constraint firstItem="gdc-ay-wP5" firstAttribute="leading" secondItem="iJi-DA-Cd2" secondAttribute="trailing" constant="19" id="Hwh-sk-fPS"/>
+                <constraint firstItem="iJi-DA-Cd2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="S9S-zS-rmh"/>
+                <constraint firstItem="iJi-DA-Cd2" firstAttribute="top" secondItem="lyq-90-B8n" secondAttribute="top" constant="-19" id="Xu9-93-mDz"/>
+                <constraint firstItem="s7r-di-QIy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yzn-b6-88D"/>
+                <constraint firstAttribute="trailing" secondItem="s7r-di-QIy" secondAttribute="trailing" id="bN9-r5-eOL"/>
+                <constraint firstAttribute="bottom" secondItem="s7r-di-QIy" secondAttribute="bottom" id="eXf-g2-DwJ"/>
+                <constraint firstItem="gdc-ay-wP5" firstAttribute="leading" secondItem="lyq-90-B8n" secondAttribute="leading" id="ltg-iR-BWw"/>
+                <constraint firstItem="gdc-ay-wP5" firstAttribute="top" secondItem="iJi-DA-Cd2" secondAttribute="top" id="smT-yT-zga"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AbQ-oK-XNG"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="298" y="238.5"/>
+        </view>
+    </objects>
+</document>
