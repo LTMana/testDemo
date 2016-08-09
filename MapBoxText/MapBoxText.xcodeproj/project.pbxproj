@@ -18,6 +18,9 @@
 		F150E6701D503060004FB2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F150E66E1D503060004FB2F9 /* LaunchScreen.storyboard */; };
 		F150E67B1D503060004FB2F9 /* MapBoxTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F150E67A1D503060004FB2F9 /* MapBoxTextTests.m */; };
 		F150E6861D503060004FB2F9 /* MapBoxTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F150E6851D503060004FB2F9 /* MapBoxTextUITests.m */; };
+		F152EB6C1D5976F6006904C3 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F152EB6B1D5976F6006904C3 /* Location.gpx */; };
+		F152EB6E1D597971006904C3 /* level.plist in Resources */ = {isa = PBXBuildFile; fileRef = F152EB6D1D597971006904C3 /* level.plist */; };
+		F152EB711D59A5BD006904C3 /* GC02-WC84.m in Sources */ = {isa = PBXBuildFile; fileRef = F152EB701D59A5BD006904C3 /* GC02-WC84.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,10 @@
 		F150E6811D503060004FB2F9 /* MapBoxTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapBoxTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F150E6851D503060004FB2F9 /* MapBoxTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapBoxTextUITests.m; sourceTree = "<group>"; };
 		F150E6871D503060004FB2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F152EB6B1D5976F6006904C3 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		F152EB6D1D597971006904C3 /* level.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = level.plist; sourceTree = "<group>"; };
+		F152EB6F1D59A5BD006904C3 /* GC02-WC84.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GC02-WC84.h"; sourceTree = "<group>"; };
+		F152EB701D59A5BD006904C3 /* GC02-WC84.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GC02-WC84.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +131,8 @@
 		F150E65F1D503060004FB2F9 /* MapBoxText */ = {
 			isa = PBXGroup;
 			children = (
+				F152EB6F1D59A5BD006904C3 /* GC02-WC84.h */,
+				F152EB701D59A5BD006904C3 /* GC02-WC84.m */,
 				F150E6631D503060004FB2F9 /* AppDelegate.h */,
 				F150E6641D503060004FB2F9 /* AppDelegate.m */,
 				F150E6661D503060004FB2F9 /* ViewController.h */,
@@ -140,6 +149,8 @@
 		F150E6601D503060004FB2F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F152EB6D1D597971006904C3 /* level.plist */,
+				F152EB6B1D5976F6006904C3 /* Location.gpx */,
 				F150E6611D503060004FB2F9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -270,6 +281,8 @@
 			files = (
 				F150E6701D503060004FB2F9 /* LaunchScreen.storyboard in Resources */,
 				F150E66D1D503060004FB2F9 /* Assets.xcassets in Resources */,
+				F152EB6C1D5976F6006904C3 /* Location.gpx in Resources */,
+				F152EB6E1D597971006904C3 /* level.plist in Resources */,
 				F150E66B1D503060004FB2F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F150E6681D503060004FB2F9 /* ViewController.m in Sources */,
+				F152EB711D59A5BD006904C3 /* GC02-WC84.m in Sources */,
 				F150E6651D503060004FB2F9 /* AppDelegate.m in Sources */,
 				F150E6621D503060004FB2F9 /* main.m in Sources */,
 			);

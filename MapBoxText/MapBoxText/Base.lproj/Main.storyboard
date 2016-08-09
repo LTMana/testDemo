@@ -30,9 +30,24 @@
                                     <action selector="changeWordMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjk-h6-hgG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvh-C0-Wa1">
+                                <rect key="frame" x="20" y="405" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="开启路况">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" title="关闭路况">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="roadCondition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Y4-Ac-z0c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7cs-Sx-qEK" firstAttribute="top" secondItem="Yvh-C0-Wa1" secondAttribute="bottom" constant="23" id="7id-yL-DAy"/>
+                            <constraint firstItem="Yvh-C0-Wa1" firstAttribute="leading" secondItem="7cs-Sx-qEK" secondAttribute="leading" id="LAv-ry-cum"/>
                             <constraint firstItem="7cs-Sx-qEK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="nIR-bC-HE1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7cs-Sx-qEK" secondAttribute="bottom" constant="112" id="y2h-Q7-GAa"/>
                         </constraints>

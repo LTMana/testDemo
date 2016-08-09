@@ -7,19 +7,39 @@
 //
 
 #import "ViewController.h"
+#import "GC02-WC84.h"
 #import <Mapbox/Mapbox.h>
 #import <CoreLocation/CoreLocation.h>
+
+
 @interface ViewController ()<CLLocationManagerDelegate>
 @property (strong, nonatomic) IBOutlet MGLMapView *mapView;
-
+@property (nonatomic,strong) NSArray *pointSet;
+@property (nonatomic,strong)NSMutableArray *polyLineArr;
 @end
 
 @implementation ViewController
 {
     CLLocationManager *_locationManager;
 }
+
+
+-(NSMutableArray *)polyLineArr
+{
+    if (_polyLineArr ==nil) {
+        _polyLineArr =[NSMutableArray array];
+    }
+    
+    return _polyLineArr;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.mapView setZoomLevel:14];
+    CLLocationCoordinate2D point = CLLocationCoordinate2DMake(41.80288, 123.438937);
+    [self.mapView setTargetCoordinate:point animated:YES];
     
 //    NSString *urlStr =@"mapbox://styles/ltmana/cird8mcdu0006gekob0wkq5yh";
 //   _mapView =[[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:[NSURL URLWithString:urlStr]];
@@ -32,25 +52,63 @@
 //    [self.view addSubview:_mapView];
 
     //[self createLocationManager];
+    NSString *filePath =  [[NSBundle mainBundle] pathForResource:@"level.plist" ofType:nil];
+
+    self.pointSet =[NSArray arrayWithContentsOfFile:filePath];
 }
-//-(void) createLocationManager{
-//    _locationManager = [[CLLocationManager alloc] init];
-//    _locationManager.delegate = self;
-//    if ([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-//        [_locationManager requestAlwaysAuthorization];
-//    }
-//    if ([_locationManager respondsToSelector:@selector(setAllowsBackgroundLocationUpdates:)]) {
-//        [_locationManager setAllowsBackgroundLocationUpdates:YES];
-//    }
-//    if ([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-//        [_locationManager requestAlwaysAuthorization];
-//    }
-//    _locationManager.pausesLocationUpdatesAutomatically = NO;
-//}
 
 
 
+/** 路况按钮 */
+- (IBAction)roadCondition:(UIButton *)sender {
+     sender.selected =!sender.selected;
+    if (sender.selected) {
+        for (int i=0; i<self.pointSet.count; i++) {
+            
+            
+            NSArray *pointsArr =self.pointSet[i];
+            //NSLog(@"执行次数%d",index);
+            CLLocationCoordinate2D *GCpoints =(CLLocationCoordinate2D*)malloc(sizeof(CLLocationCoordinate2D)*(pointsArr.count));
+            
+            CLLocationCoordinate2D *WCpoints =(CLLocationCoordinate2D*)malloc(sizeof(CLLocationCoordinate2D)*(pointsArr.count));
+            
+            CLLocationCoordinate2D *tempPoints = GCpoints;
+            
+            CLLocationCoordinate2D *wcpoints = WCpoints;
+            for (NSDictionary *lonWithLat in pointsArr) {
+                
+                
+                (*tempPoints).longitude = [lonWithLat[@"lon"] doubleValue] *0.000001;
+                
+                (*tempPoints).latitude =[lonWithLat[@"lat"] doubleValue]*0.000001;
+                *wcpoints =[GC02_WC84 gcj02ToWgs84:(*tempPoints)];
+                
+                
+                tempPoints++;
+                
+                wcpoints ++;
+                
+            }
+            
+            MGLPolyline *polylineOverlay  =  [MGLPolyline polylineWithCoordinates:WCpoints count:pointsArr.count];
+            
+    
+            [self.mapView addOverlay:polylineOverlay];
+            
+            free(WCpoints);
+            free(GCpoints);
+            
+            [self.polyLineArr addObject:polylineOverlay];
+    
+        }
+    }else{
+        [self.mapView removeOverlays:self.polyLineArr];
+    }
+}
 
+
+
+/** 卫星视图切换按钮 */
 - (IBAction)changeWordMap:(UIButton *)sender {
     sender.selected =!sender.selected;
     
@@ -62,15 +120,13 @@
         self.mapView.styleURL=nil;
     }
     
-   
-       
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
+
+
 
 @end
