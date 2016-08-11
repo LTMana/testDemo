@@ -208,6 +208,8 @@
 		F1A99D6F1D51E2B700A6C096 /* coffee.js in Resources */ = {isa = PBXBuildFile; fileRef = F1A99D521D51E2B700A6C096 /* coffee.js */; };
 		F1A99D701D51E2B700A6C096 /* init.mix.js in Resources */ = {isa = PBXBuildFile; fileRef = F1A99D531D51E2B700A6C096 /* init.mix.js */; };
 		F1A99D711D51E2B700A6C096 /* offline.js in Resources */ = {isa = PBXBuildFile; fileRef = F1A99D541D51E2B700A6C096 /* offline.js */; };
+		F1FB907F1D5B1CF400617882 /* MapboxAPI.htm in Resources */ = {isa = PBXBuildFile; fileRef = F1FB90761D5B1CF400617882 /* MapboxAPI.htm */; };
+		F1FB90811D5B1D5500617882 /* MapboxAPI_files in Resources */ = {isa = PBXBuildFile; fileRef = F1FB90801D5B1D5500617882 /* MapboxAPI_files */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +439,8 @@
 		F1A99D521D51E2B700A6C096 /* coffee.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = coffee.js; sourceTree = "<group>"; };
 		F1A99D531D51E2B700A6C096 /* init.mix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = init.mix.js; sourceTree = "<group>"; };
 		F1A99D541D51E2B700A6C096 /* offline.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = offline.js; sourceTree = "<group>"; };
+		F1FB90761D5B1CF400617882 /* MapboxAPI.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MapboxAPI.htm; sourceTree = "<group>"; };
+		F1FB90801D5B1D5500617882 /* MapboxAPI_files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MapboxAPI_files; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +507,8 @@
 		F1A99B7B1D5190BB00A6C096 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1FB90801D5B1D5500617882 /* MapboxAPI_files */,
+				F1FB90761D5B1CF400617882 /* MapboxAPI.htm */,
 				F1A99D341D51E2B700A6C096 /* activitytraffic */,
 				F1A99BC21D51DDC700A6C096 /* 大前端时代：ReactNative */,
 				F1A99B7C1D5190BB00A6C096 /* main.m */,
@@ -1239,6 +1245,7 @@
 				F1A99CA11D51DDC700A6C096 /* BC0CFA37AE47DB18FAE133F67216B49E.png in Resources */,
 				F1A99D131D51DDC700A6C096 /* Help.png in Resources */,
 				F1A99CA01D51DDC700A6C096 /* 9006622103362D8A5ED5711F1B93D568.png in Resources */,
+				F1FB907F1D5B1CF400617882 /* MapboxAPI.htm in Resources */,
 				F1A99D0B1D51DDC700A6C096 /* header.json in Resources */,
 				F1A99CE51D51DDC700A6C096 /* 1ED780A5A812793AE77FE8A832838209.png in Resources */,
 				F1A99D6A1D51E2B700A6C096 /* 8.jpg in Resources */,
@@ -1313,6 +1320,7 @@
 				F1A99C941D51DDC700A6C096 /* thumbnail.jpeg in Resources */,
 				F1A99CCF1D51DDC700A6C096 /* 19C11CA9202101F6DE31D60CD234369D.png in Resources */,
 				F1A99CD31D51DDC700A6C096 /* F4D38784958D69D3F9CE7FED791AE544.png in Resources */,
+				F1FB90811D5B1D5500617882 /* MapboxAPI_files in Resources */,
 				F1A99D2D1D51DDC700A6C096 /* string.js in Resources */,
 				F1A99CED1D51DDC700A6C096 /* E20640C2-D1DE-4D54-8876-4B65AB79FD57.json in Resources */,
 				F1A99CD51D51DDC700A6C096 /* BCB51C96-6308-40F5-B7FC-5BAE0EBE9B8B.jsonp in Resources */,
@@ -1555,9 +1563,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = mapVIsite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lt.mapVIsite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.mapboxAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1566,9 +1576,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = mapVIsite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lt.mapVIsite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.mapboxAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

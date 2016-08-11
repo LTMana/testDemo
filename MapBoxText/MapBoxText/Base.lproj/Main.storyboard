@@ -30,7 +30,7 @@
                                     <action selector="changeWordMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjk-h6-hgG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvh-C0-Wa1">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvh-C0-Wa1">
                                 <rect key="frame" x="20" y="405" width="60" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="开启路况">

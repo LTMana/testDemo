@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F152EEC51D59D519006904C3 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F152EEC41D59D519006904C3 /* Mapbox.framework */; };
 		F19B87ED1D053FAB0087861A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B87EC1D053FAB0087861A /* main.m */; };
 		F19B87F01D053FAB0087861A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B87EF1D053FAB0087861A /* AppDelegate.m */; };
 		F19B87F31D053FAB0087861A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B87F21D053FAB0087861A /* ViewController.m */; };
@@ -31,6 +32,7 @@
 		0359B9B56D0FB564EA8C6040 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		58CF9A184247C514F70E8B85 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E43B450D6F33D9CA64EB9A31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F152EEC41D59D519006904C3 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		F19B87E71D053FAB0087861A /* mapBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19B87EB1D053FAB0087861A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F19B87EC1D053FAB0087861A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47E1B7DDA80E7F4125E02B9 /* libPods.a in Frameworks */,
+				F152EEC51D59D519006904C3 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		F19B87DE1D053FAB0087861A = {
 			isa = PBXGroup;
 			children = (
+				F152EEC41D59D519006904C3 /* Mapbox.framework */,
 				F19B87E91D053FAB0087861A /* mapBox */,
 				F19B88031D053FAB0087861A /* mapBoxTests */,
 				F19B87E81D053FAB0087861A /* Products */,
@@ -425,6 +429,10 @@
 			baseConfigurationReference = 58CF9A184247C514F70E8B85 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mapBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +444,10 @@
 			baseConfigurationReference = 0359B9B56D0FB564EA8C6040 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mapBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

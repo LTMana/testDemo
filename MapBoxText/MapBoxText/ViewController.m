@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "GC02-WC84.h"
-#import <Mapbox/Mapbox.h>
+#import "Mapbox.h"
 #import <CoreLocation/CoreLocation.h>
 
 
-@interface ViewController ()<CLLocationManagerDelegate>
+@interface ViewController ()<CLLocationManagerDelegate,MGLMapViewDelegate>
 @property (strong, nonatomic) IBOutlet MGLMapView *mapView;
 @property (nonatomic,strong) NSArray *pointSet;
 @property (nonatomic,strong)NSMutableArray *polyLineArr;
@@ -38,8 +38,12 @@
     [super viewDidLoad];
     
     [self.mapView setZoomLevel:14];
+  
+    self.mapView.delegate =self;
     CLLocationCoordinate2D point = CLLocationCoordinate2DMake(41.80288, 123.438937);
     [self.mapView setTargetCoordinate:point animated:YES];
+    
+    NSLog(@"%f , %f",  self.mapView.userLocation.location.coordinate.latitude,  self.mapView.userLocation.location.coordinate.longitude);
     
 //    NSString *urlStr =@"mapbox://styles/ltmana/cird8mcdu0006gekob0wkq5yh";
 //   _mapView =[[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:[NSURL URLWithString:urlStr]];
@@ -106,6 +110,13 @@
     }
 }
 
+
+
+- (void)mapViewWillStartLocatingUser:(nonnull MGLMapView *)mapView
+
+{
+   
+}
 
 
 /** 卫星视图切换按钮 */

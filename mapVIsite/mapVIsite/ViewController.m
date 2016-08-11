@@ -18,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-  // NSString *path =   [[NSBundle mainBundle] pathForResource:@"activitytraffic.html" ofType:nil];
-    NSString *path=@"http://www.jd.com";
+   NSString *path =   [[NSBundle mainBundle] pathForResource:@"MapboxAPI.htm" ofType:nil];
+//   NSString *path=@"https://www.mapbox.com/api-documentation/?language=Objective-C#introduction";
     
-//    NSString* path = [[[NSBundle mainBundle]bundlePath] stringByAppendingPathComponent:@"activitytraffic.html"];
+//    NSString* path = [[[NSBundle mainBundle]bundlePath] stringByAppendingPathComponent:@"index1.html"];
 
     
     NSURL *url =[NSURL URLWithString:path];
