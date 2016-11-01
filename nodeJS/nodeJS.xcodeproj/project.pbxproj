@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1ADC1081DB8C9C000125448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ADC1071DB8C9C000125448 /* main.m */; };
+		F1ADC10B1DB8C9C000125448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ADC10A1DB8C9C000125448 /* AppDelegate.m */; };
+		F1ADC10E1DB8C9C000125448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ADC10D1DB8C9C000125448 /* ViewController.m */; };
+		F1ADC1111DB8C9C000125448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ADC10F1DB8C9C000125448 /* Main.storyboard */; };
+		F1ADC1131DB8C9C000125448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1ADC1121DB8C9C000125448 /* Assets.xcassets */; };
+		F1ADC1161DB8C9C000125448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ADC1141DB8C9C000125448 /* LaunchScreen.storyboard */; };
+		F1ADC1211DB8C9C000125448 /* nodeJSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ADC1201DB8C9C000125448 /* nodeJSTests.m */; };
+		F1ADC12C1DB8C9C000125448 /* nodeJSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ADC12B1DB8C9C000125448 /* nodeJSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1ADC11D1DB8C9C000125448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1ADC0FB1DB8C9BF00125448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1ADC1021DB8C9BF00125448;
+			remoteInfo = nodeJS;
+		};
+		F1ADC1281DB8C9C000125448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1ADC0FB1DB8C9BF00125448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1ADC1021DB8C9BF00125448;
+			remoteInfo = nodeJS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1ADC1031DB8C9BF00125448 /* nodeJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nodeJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1ADC1071DB8C9C000125448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1ADC1091DB8C9C000125448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1ADC10A1DB8C9C000125448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1ADC10C1DB8C9C000125448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1ADC10D1DB8C9C000125448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1ADC1101DB8C9C000125448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1ADC1121DB8C9C000125448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1ADC1151DB8C9C000125448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1ADC1171DB8C9C000125448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1ADC11C1DB8C9C000125448 /* nodeJSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nodeJSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1ADC1201DB8C9C000125448 /* nodeJSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nodeJSTests.m; sourceTree = "<group>"; };
+		F1ADC1221DB8C9C000125448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1ADC1271DB8C9C000125448 /* nodeJSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nodeJSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1ADC12B1DB8C9C000125448 /* nodeJSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nodeJSUITests.m; sourceTree = "<group>"; };
+		F1ADC12D1DB8C9C000125448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1ADC1001DB8C9BF00125448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC1191DB8C9C000125448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC1241DB8C9C000125448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1ADC0FA1DB8C9BF00125448 = {
+			isa = PBXGroup;
+			children = (
+				F1ADC1051DB8C9C000125448 /* nodeJS */,
+				F1ADC11F1DB8C9C000125448 /* nodeJSTests */,
+				F1ADC12A1DB8C9C000125448 /* nodeJSUITests */,
+				F1ADC1041DB8C9BF00125448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1ADC1041DB8C9BF00125448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADC1031DB8C9BF00125448 /* nodeJS.app */,
+				F1ADC11C1DB8C9C000125448 /* nodeJSTests.xctest */,
+				F1ADC1271DB8C9C000125448 /* nodeJSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1ADC1051DB8C9C000125448 /* nodeJS */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADC1091DB8C9C000125448 /* AppDelegate.h */,
+				F1ADC10A1DB8C9C000125448 /* AppDelegate.m */,
+				F1ADC10C1DB8C9C000125448 /* ViewController.h */,
+				F1ADC10D1DB8C9C000125448 /* ViewController.m */,
+				F1ADC10F1DB8C9C000125448 /* Main.storyboard */,
+				F1ADC1121DB8C9C000125448 /* Assets.xcassets */,
+				F1ADC1141DB8C9C000125448 /* LaunchScreen.storyboard */,
+				F1ADC1171DB8C9C000125448 /* Info.plist */,
+				F1ADC1061DB8C9C000125448 /* Supporting Files */,
+			);
+			path = nodeJS;
+			sourceTree = "<group>";
+		};
+		F1ADC1061DB8C9C000125448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADC1071DB8C9C000125448 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1ADC11F1DB8C9C000125448 /* nodeJSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADC1201DB8C9C000125448 /* nodeJSTests.m */,
+				F1ADC1221DB8C9C000125448 /* Info.plist */,
+			);
+			path = nodeJSTests;
+			sourceTree = "<group>";
+		};
+		F1ADC12A1DB8C9C000125448 /* nodeJSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADC12B1DB8C9C000125448 /* nodeJSUITests.m */,
+				F1ADC12D1DB8C9C000125448 /* Info.plist */,
+			);
+			path = nodeJSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1ADC1021DB8C9BF00125448 /* nodeJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1ADC1301DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJS" */;
+			buildPhases = (
+				F1ADC0FF1DB8C9BF00125448 /* Sources */,
+				F1ADC1001DB8C9BF00125448 /* Frameworks */,
+				F1ADC1011DB8C9BF00125448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nodeJS;
+			productName = nodeJS;
+			productReference = F1ADC1031DB8C9BF00125448 /* nodeJS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1ADC11B1DB8C9C000125448 /* nodeJSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1ADC1331DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJSTests" */;
+			buildPhases = (
+				F1ADC1181DB8C9C000125448 /* Sources */,
+				F1ADC1191DB8C9C000125448 /* Frameworks */,
+				F1ADC11A1DB8C9C000125448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1ADC11E1DB8C9C000125448 /* PBXTargetDependency */,
+			);
+			name = nodeJSTests;
+			productName = nodeJSTests;
+			productReference = F1ADC11C1DB8C9C000125448 /* nodeJSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1ADC1261DB8C9C000125448 /* nodeJSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1ADC1361DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJSUITests" */;
+			buildPhases = (
+				F1ADC1231DB8C9C000125448 /* Sources */,
+				F1ADC1241DB8C9C000125448 /* Frameworks */,
+				F1ADC1251DB8C9C000125448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1ADC1291DB8C9C000125448 /* PBXTargetDependency */,
+			);
+			name = nodeJSUITests;
+			productName = nodeJSUITests;
+			productReference = F1ADC1271DB8C9C000125448 /* nodeJSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1ADC0FB1DB8C9BF00125448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ltcom;
+				TargetAttributes = {
+					F1ADC1021DB8C9BF00125448 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F1ADC11B1DB8C9C000125448 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F1ADC1021DB8C9BF00125448;
+					};
+					F1ADC1261DB8C9C000125448 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F1ADC1021DB8C9BF00125448;
+					};
+				};
+			};
+			buildConfigurationList = F1ADC0FE1DB8C9BF00125448 /* Build configuration list for PBXProject "nodeJS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1ADC0FA1DB8C9BF00125448;
+			productRefGroup = F1ADC1041DB8C9BF00125448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1ADC1021DB8C9BF00125448 /* nodeJS */,
+				F1ADC11B1DB8C9C000125448 /* nodeJSTests */,
+				F1ADC1261DB8C9C000125448 /* nodeJSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1ADC1011DB8C9BF00125448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ADC1161DB8C9C000125448 /* LaunchScreen.storyboard in Resources */,
+				F1ADC1131DB8C9C000125448 /* Assets.xcassets in Resources */,
+				F1ADC1111DB8C9C000125448 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC11A1DB8C9C000125448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC1251DB8C9C000125448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1ADC0FF1DB8C9BF00125448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ADC10E1DB8C9C000125448 /* ViewController.m in Sources */,
+				F1ADC10B1DB8C9C000125448 /* AppDelegate.m in Sources */,
+				F1ADC1081DB8C9C000125448 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC1181DB8C9C000125448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ADC1211DB8C9C000125448 /* nodeJSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ADC1231DB8C9C000125448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1ADC12C1DB8C9C000125448 /* nodeJSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1ADC11E1DB8C9C000125448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1ADC1021DB8C9BF00125448 /* nodeJS */;
+			targetProxy = F1ADC11D1DB8C9C000125448 /* PBXContainerItemProxy */;
+		};
+		F1ADC1291DB8C9C000125448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1ADC1021DB8C9BF00125448 /* nodeJS */;
+			targetProxy = F1ADC1281DB8C9C000125448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1ADC10F1DB8C9C000125448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1ADC1101DB8C9C000125448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1ADC1141DB8C9C000125448 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1ADC1151DB8C9C000125448 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1ADC12E1DB8C9C000125448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1ADC12F1DB8C9C000125448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1ADC1311DB8C9C000125448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nodeJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1ADC1321DB8C9C000125448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = nodeJS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1ADC1341DB8C9C000125448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nodeJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nodeJS.app/nodeJS";
+			};
+			name = Debug;
+		};
+		F1ADC1351DB8C9C000125448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = nodeJSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nodeJS.app/nodeJS";
+			};
+			name = Release;
+		};
+		F1ADC1371DB8C9C000125448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nodeJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = nodeJS;
+			};
+			name = Debug;
+		};
+		F1ADC1381DB8C9C000125448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = nodeJSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lt.nodeJSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = nodeJS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1ADC0FE1DB8C9BF00125448 /* Build configuration list for PBXProject "nodeJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ADC12E1DB8C9C000125448 /* Debug */,
+				F1ADC12F1DB8C9C000125448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1ADC1301DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ADC1311DB8C9C000125448 /* Debug */,
+				F1ADC1321DB8C9C000125448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1ADC1331DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ADC1341DB8C9C000125448 /* Debug */,
+				F1ADC1351DB8C9C000125448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1ADC1361DB8C9C000125448 /* Build configuration list for PBXNativeTarget "nodeJSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ADC1371DB8C9C000125448 /* Debug */,
+				F1ADC1381DB8C9C000125448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1ADC0FB1DB8C9BF00125448 /* Project object */;
+}

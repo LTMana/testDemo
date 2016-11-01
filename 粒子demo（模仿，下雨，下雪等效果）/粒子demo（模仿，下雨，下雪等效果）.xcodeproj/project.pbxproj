@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F129F4CE1D90E60B00256448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F4CD1D90E60B00256448 /* main.m */; };
+		F129F4D11D90E60B00256448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F4D01D90E60B00256448 /* AppDelegate.m */; };
+		F129F4D41D90E60B00256448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F4D31D90E60B00256448 /* ViewController.m */; };
+		F129F4D71D90E60B00256448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F129F4D51D90E60B00256448 /* Main.storyboard */; };
+		F129F4D91D90E60B00256448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F129F4D81D90E60B00256448 /* Assets.xcassets */; };
+		F129F4DC1D90E60B00256448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F129F4DA1D90E60B00256448 /* LaunchScreen.storyboard */; };
+		F129F4E71D90E60B00256448 /* __demo_____________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F4E61D90E60B00256448 /* __demo_____________Tests.m */; };
+		F129F4F21D90E60B00256448 /* __demo_____________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F4F11D90E60B00256448 /* __demo_____________UITests.m */; };
+		F129F5011D90E6C800256448 /* CAEmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F5001D90E6C800256448 /* CAEmitterLayerView.m */; };
+		F129F5041D90EB3A00256448 /* snow.m in Sources */ = {isa = PBXBuildFile; fileRef = F129F5031D90EB3A00256448 /* snow.m */; };
+		F188E0AA1D923AAF00C93C54 /* CAEmitterBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F188E0A91D923AAF00C93C54 /* CAEmitterBaseLayer.m */; };
+		F188E0AD1D925BFB00C93C54 /* SnowEmitterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F188E0AC1D925BFB00C93C54 /* SnowEmitterCell.m */; };
+		F188E0B11D925C3E00C93C54 /* RainEmitterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F188E0B01D925C3E00C93C54 /* RainEmitterCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F129F4E31D90E60B00256448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F129F4C11D90E60B00256448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F129F4C81D90E60B00256448;
+			remoteInfo = "粒子demo（模仿，下雨，下雪等效果）";
+		};
+		F129F4EE1D90E60B00256448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F129F4C11D90E60B00256448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F129F4C81D90E60B00256448;
+			remoteInfo = "粒子demo（模仿，下雨，下雪等效果）";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F129F4C91D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "粒子demo（模仿，下雨，下雪等效果）.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F129F4CD1D90E60B00256448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F129F4CF1D90E60B00256448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F129F4D01D90E60B00256448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F129F4D21D90E60B00256448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F129F4D31D90E60B00256448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F129F4D61D90E60B00256448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F129F4D81D90E60B00256448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F129F4DB1D90E60B00256448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F129F4DD1D90E60B00256448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F129F4E21D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "粒子demo（模仿，下雨，下雪等效果）Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F129F4E61D90E60B00256448 /* __demo_____________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__demo_____________Tests.m"; sourceTree = "<group>"; };
+		F129F4E81D90E60B00256448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F129F4ED1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "粒子demo（模仿，下雨，下雪等效果）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F129F4F11D90E60B00256448 /* __demo_____________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__demo_____________UITests.m"; sourceTree = "<group>"; };
+		F129F4F31D90E60B00256448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F129F4FF1D90E6C800256448 /* CAEmitterLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerView.h; sourceTree = "<group>"; };
+		F129F5001D90E6C800256448 /* CAEmitterLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerView.m; sourceTree = "<group>"; };
+		F129F5021D90EB3A00256448 /* snow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snow.h; sourceTree = "<group>"; };
+		F129F5031D90EB3A00256448 /* snow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snow.m; sourceTree = "<group>"; };
+		F188E0A81D923AAF00C93C54 /* CAEmitterBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterBaseLayer.h; sourceTree = "<group>"; };
+		F188E0A91D923AAF00C93C54 /* CAEmitterBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterBaseLayer.m; sourceTree = "<group>"; };
+		F188E0AB1D925BFB00C93C54 /* SnowEmitterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowEmitterCell.h; sourceTree = "<group>"; };
+		F188E0AC1D925BFB00C93C54 /* SnowEmitterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowEmitterCell.m; sourceTree = "<group>"; };
+		F188E0AF1D925C3E00C93C54 /* RainEmitterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainEmitterCell.h; sourceTree = "<group>"; };
+		F188E0B01D925C3E00C93C54 /* RainEmitterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainEmitterCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F129F4C61D90E60B00256448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4DF1D90E60B00256448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4EA1D90E60B00256448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F129F4C01D90E60B00256448 = {
+			isa = PBXGroup;
+			children = (
+				F129F4CB1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */,
+				F129F4E51D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests */,
+				F129F4F01D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests */,
+				F129F4CA1D90E60B00256448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F129F4CA1D90E60B00256448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F129F4C91D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）.app */,
+				F129F4E21D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests.xctest */,
+				F129F4ED1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F129F4CB1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */ = {
+			isa = PBXGroup;
+			children = (
+				F188E0AE1D925C0500C93C54 /* CA */,
+				F129F4FF1D90E6C800256448 /* CAEmitterLayerView.h */,
+				F129F5001D90E6C800256448 /* CAEmitterLayerView.m */,
+				F129F5021D90EB3A00256448 /* snow.h */,
+				F129F5031D90EB3A00256448 /* snow.m */,
+				F129F4CF1D90E60B00256448 /* AppDelegate.h */,
+				F129F4D01D90E60B00256448 /* AppDelegate.m */,
+				F129F4D21D90E60B00256448 /* ViewController.h */,
+				F129F4D31D90E60B00256448 /* ViewController.m */,
+				F129F4D51D90E60B00256448 /* Main.storyboard */,
+				F129F4D81D90E60B00256448 /* Assets.xcassets */,
+				F129F4DA1D90E60B00256448 /* LaunchScreen.storyboard */,
+				F129F4DD1D90E60B00256448 /* Info.plist */,
+				F129F4CC1D90E60B00256448 /* Supporting Files */,
+			);
+			path = "粒子demo（模仿，下雨，下雪等效果）";
+			sourceTree = "<group>";
+		};
+		F129F4CC1D90E60B00256448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F129F4CD1D90E60B00256448 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F129F4E51D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F129F4E61D90E60B00256448 /* __demo_____________Tests.m */,
+				F129F4E81D90E60B00256448 /* Info.plist */,
+			);
+			path = "粒子demo（模仿，下雨，下雪等效果）Tests";
+			sourceTree = "<group>";
+		};
+		F129F4F01D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F129F4F11D90E60B00256448 /* __demo_____________UITests.m */,
+				F129F4F31D90E60B00256448 /* Info.plist */,
+			);
+			path = "粒子demo（模仿，下雨，下雪等效果）UITests";
+			sourceTree = "<group>";
+		};
+		F188E0AE1D925C0500C93C54 /* CA */ = {
+			isa = PBXGroup;
+			children = (
+				F188E0A81D923AAF00C93C54 /* CAEmitterBaseLayer.h */,
+				F188E0A91D923AAF00C93C54 /* CAEmitterBaseLayer.m */,
+				F188E0AB1D925BFB00C93C54 /* SnowEmitterCell.h */,
+				F188E0AC1D925BFB00C93C54 /* SnowEmitterCell.m */,
+				F188E0AF1D925C3E00C93C54 /* RainEmitterCell.h */,
+				F188E0B01D925C3E00C93C54 /* RainEmitterCell.m */,
+			);
+			name = CA;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F129F4C81D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F129F4F61D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）" */;
+			buildPhases = (
+				F129F4C51D90E60B00256448 /* Sources */,
+				F129F4C61D90E60B00256448 /* Frameworks */,
+				F129F4C71D90E60B00256448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "粒子demo（模仿，下雨，下雪等效果）";
+			productName = "粒子demo（模仿，下雨，下雪等效果）";
+			productReference = F129F4C91D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F129F4E11D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F129F4F91D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）Tests" */;
+			buildPhases = (
+				F129F4DE1D90E60B00256448 /* Sources */,
+				F129F4DF1D90E60B00256448 /* Frameworks */,
+				F129F4E01D90E60B00256448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F129F4E41D90E60B00256448 /* PBXTargetDependency */,
+			);
+			name = "粒子demo（模仿，下雨，下雪等效果）Tests";
+			productName = "粒子demo（模仿，下雨，下雪等效果）Tests";
+			productReference = F129F4E21D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F129F4EC1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F129F4FC1D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）UITests" */;
+			buildPhases = (
+				F129F4E91D90E60B00256448 /* Sources */,
+				F129F4EA1D90E60B00256448 /* Frameworks */,
+				F129F4EB1D90E60B00256448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F129F4EF1D90E60B00256448 /* PBXTargetDependency */,
+			);
+			name = "粒子demo（模仿，下雨，下雪等效果）UITests";
+			productName = "粒子demo（模仿，下雨，下雪等效果）UITests";
+			productReference = F129F4ED1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F129F4C11D90E60B00256448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ltcom;
+				TargetAttributes = {
+					F129F4C81D90E60B00256448 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9AP47RNLM6;
+					};
+					F129F4E11D90E60B00256448 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F129F4C81D90E60B00256448;
+					};
+					F129F4EC1D90E60B00256448 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F129F4C81D90E60B00256448;
+					};
+				};
+			};
+			buildConfigurationList = F129F4C41D90E60B00256448 /* Build configuration list for PBXProject "粒子demo（模仿，下雨，下雪等效果）" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F129F4C01D90E60B00256448;
+			productRefGroup = F129F4CA1D90E60B00256448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F129F4C81D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */,
+				F129F4E11D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）Tests */,
+				F129F4EC1D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果）UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F129F4C71D90E60B00256448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129F4DC1D90E60B00256448 /* LaunchScreen.storyboard in Resources */,
+				F129F4D91D90E60B00256448 /* Assets.xcassets in Resources */,
+				F129F4D71D90E60B00256448 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4E01D90E60B00256448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4EB1D90E60B00256448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F129F4C51D90E60B00256448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F188E0B11D925C3E00C93C54 /* RainEmitterCell.m in Sources */,
+				F188E0AD1D925BFB00C93C54 /* SnowEmitterCell.m in Sources */,
+				F129F5041D90EB3A00256448 /* snow.m in Sources */,
+				F188E0AA1D923AAF00C93C54 /* CAEmitterBaseLayer.m in Sources */,
+				F129F4D41D90E60B00256448 /* ViewController.m in Sources */,
+				F129F5011D90E6C800256448 /* CAEmitterLayerView.m in Sources */,
+				F129F4D11D90E60B00256448 /* AppDelegate.m in Sources */,
+				F129F4CE1D90E60B00256448 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4DE1D90E60B00256448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129F4E71D90E60B00256448 /* __demo_____________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F129F4E91D90E60B00256448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F129F4F21D90E60B00256448 /* __demo_____________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F129F4E41D90E60B00256448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F129F4C81D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */;
+			targetProxy = F129F4E31D90E60B00256448 /* PBXContainerItemProxy */;
+		};
+		F129F4EF1D90E60B00256448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F129F4C81D90E60B00256448 /* 粒子demo（模仿，下雨，下雪等效果） */;
+			targetProxy = F129F4EE1D90E60B00256448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F129F4D51D90E60B00256448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F129F4D61D90E60B00256448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F129F4DA1D90E60B00256448 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F129F4DB1D90E60B00256448 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F129F4F41D90E60B00256448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F129F4F51D90E60B00256448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F129F4F71D90E60B00256448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F129F4F81D90E60B00256448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F129F4FA1D90E60B00256448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/粒子demo（模仿，下雨，下雪等效果）.app/粒子demo（模仿，下雨，下雪等效果）";
+			};
+			name = Debug;
+		};
+		F129F4FB1D90E60B00256448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/粒子demo（模仿，下雨，下雪等效果）.app/粒子demo（模仿，下雨，下雪等效果）";
+			};
+			name = Release;
+		};
+		F129F4FD1D90E60B00256448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "粒子demo（模仿，下雨，下雪等效果）";
+			};
+			name = Debug;
+		};
+		F129F4FE1D90E60B00256448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "粒子demo（模仿，下雨，下雪等效果）UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lt.--demo-------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "粒子demo（模仿，下雨，下雪等效果）";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F129F4C41D90E60B00256448 /* Build configuration list for PBXProject "粒子demo（模仿，下雨，下雪等效果）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129F4F41D90E60B00256448 /* Debug */,
+				F129F4F51D90E60B00256448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F129F4F61D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129F4F71D90E60B00256448 /* Debug */,
+				F129F4F81D90E60B00256448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F129F4F91D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129F4FA1D90E60B00256448 /* Debug */,
+				F129F4FB1D90E60B00256448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F129F4FC1D90E60B00256448 /* Build configuration list for PBXNativeTarget "粒子demo（模仿，下雨，下雪等效果）UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F129F4FD1D90E60B00256448 /* Debug */,
+				F129F4FE1D90E60B00256448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F129F4C11D90E60B00256448 /* Project object */;
+}

@@ -41,6 +41,9 @@
 
 @property (nonatomic ,assign)BOOL timeNotChange;
 
+/**画线*/
+@property (nonatomic ,strong) CNMKPolyline *myPolyline;
+
 
 
 @end
@@ -63,6 +66,13 @@
  */
 -(void)setUpMapView
 {
+    
+    UIButton *button =[[UIButton alloc] init];
+    button.frame =CGRectMake(40, 400, 50, 50);
+    button.backgroundColor =[UIColor redColor];
+    [button addTarget:self action:@selector(showRoad) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
     [self.view addSubview:self.mapView];
     [self.view sendSubviewToBack:self.mapView];
     //创建check时间的变化的观察者
@@ -385,6 +395,92 @@
     });
     
 }
+
+- (void)showRoad
+{
+  
+    NSArray * textPoint =@[@"123.433052,41.802639",
+                           @"123.433334,41.803020",
+                           @"123.433441,41.803020",
+                           @"123.433640,41.803013",
+                           @"123.433998,41.802998",
+                           @"123.433998,41.802998",
+                           @"123.434486,41.802361",
+                           @"123.434563,41.802021",
+                           @"123.434586,41.801651",
+                           @"123.434334,41.800911",
+                           @"123.433975,41.800537",
+                           @"123.433296,41.800171",
+                           @"123.433151,41.799950",
+                           @"123.433151,41.799950",
+                           @"123.433525,41.799408",
+                           @"123.433525,41.799408",
+                           @"123.433426,41.799408",
+                           @"123.433098,41.799408",
+                           @"123.432686,41.799469",
+                           @"123.431694,41.799686",
+                           @"123.431564,41.799721",
+                           @"123.431053,41.799816",
+                           @"123.430206,41.799999",
+                           @"123.429565,41.800148",
+                           @"123.429497,41.800007",
+                           @"123.430153,41.799862",
+                           @"123.431000,41.799679",
+                           @"123.431000,41.799679",
+                           @"123.431023,41.799603",
+                           @"123.431305,41.799248",
+                           @"123.431351,41.798721",
+                           @"123.431580,41.798733",
+                           @"123.431580,41.798733",
+                           @"123.431595,41.798580",
+                           @"123.431633,41.798351",
+                           @"123.431755,41.797470",
+                           @"123.431831,41.796909",
+                           @"123.431953,41.796051",
+                           @"123.432060,41.795269",
+                           @"123.432220,41.794239",
+                           @"123.432274,41.793941",
+                           @"123.432396,41.793518",
+                           @"123.432571,41.792961",
+                           @"123.432831,41.792301",
+                           @"123.432884,41.792179",
+                           @"123.432899,41.792110"];
+    
+    
+    
+    
+    CNMKGeoPoint *points = (CNMKGeoPoint*)malloc(sizeof(CNMKGeoPoint)*(textPoint.count));
+    
+     CNMKGeoPoint *tempPoints = points;
+    for (NSInteger i = 0; i < textPoint.count; i++) {
+        
+        NSString *str = textPoint[i];
+    
+        NSArray *temp = [str componentsSeparatedByString:@","];
+        
+        for (int j=0; j<temp.count; j++) {
+            
+            (*tempPoints).longitude = [temp[0] doubleValue];
+            
+            (*tempPoints).latitude =[temp[1] doubleValue];
+            tempPoints++;
+         }
+        
+        
+        
+        
+        
+        
+        self.myPolyline = [CNMKPolyline polylineWithGeoPoints:points count:textPoint.count];
+       [self.mapView addOverlay:self.myPolyline];
+     
+        free(points);
+    }
+    
+    
+}
+
+
 
 
 /**

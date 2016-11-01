@@ -1,0 +1,21 @@
+//
+//  CAEmitterBaseLayer.h
+//  粒子demo（模仿，下雨，下雪等效果）
+//
+//  Created by 刘博通 on 16/9/21.
+//  Copyright © 2016年 ltcom. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+typedef NS_ENUM(NSInteger,CAEmitterStyle){
+   
+   CAEmitterStyleSnow,  // 下雪
+   CAEmitterStyleRarin  // 下雨
+    
+};
+@interface CAEmitterBaseLayer : CAEmitterLayer
+/**特效类型*/
+@property (nonatomic, assign) CAEmitterStyle styleMode;
+
++(instancetype)baseLayer;
+@end
