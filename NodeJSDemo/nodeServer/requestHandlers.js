@@ -41,28 +41,44 @@ return content;
  //    '</body>'+
  //    '</html>';
 
-   var body = '<html>'+
-    '<head>'+
-    '<meta http-equiv="Content-Type" content="text/html; '+
-    'charset=UTF-8" />'+
-    '</head>'+
-    '<body>'+
-    '<form action="/upload" enctype="multipart/form-data" '+
-    'method="post">'+
-    '<input type="file" name="upload" multiple="multiple">'+
-    '<input type="submit" value="Upload file" />'+
-    '</form>'+
-    '</body>'+
-    '</html>';
+   // var body = '<html>'+
+   //  '<head>'+
+   //  '<meta http-equiv="Content-Type" content="text/html; '+
+   //  'charset=UTF-8" />'+
+   //  '</head>'+
+   //  '<body>'+
+   //  '<form action="/upload" enctype="multipart/form-data" '+
+   //  'method="post">'+
+   //  '<input type="file" name="upload" multiple="multiple">'+
+   //  '<input type="submit" value="Upload file" />'+
+   //  '</form>'+
+   //  '</body>'+
+   //  '</html>';
+
+fs.readFile('/tmp/demos/index.html','binary',function(err,file){
+if (err) {
+    res.writeHead(500, {"Content-Type": "text/plain"});
+      res.write(err + "\n");
+      res.end();
+
+}else{
+   res.writeHead(200, {"Content-Type": "text/html"});
+   res.write(file , 'binary');
+   res.end();
 
 
+}
+
+
+
+});
 
 
 //exec("find /" , function(err,stdout,stderr){
 
-  res.writeHead(200 ,{"Content-Type" : "text/html"});
-  res.write(body);
-  res.end();
+  // res.writeHead(200 ,{"Content-Type" : "text/html"});
+  // res.write(body);
+  // res.end();
  //});
 
 

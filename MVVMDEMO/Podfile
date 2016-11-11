@@ -1,0 +1,12 @@
+
+platform :ios, '8.0'
+
+target "MVVMDEMO" do
+pod 'Masonry'
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod ‘SDWebImage’
+pod ‘ReactiveCocoa’
+use_frameworks!
+end
