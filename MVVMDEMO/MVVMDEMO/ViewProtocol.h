@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ViewModelProtocol.h"
 @protocol ViewProtocol <NSObject>
 
 
 @optional
 
+
+- (instancetype)initWithViewModel:(id <ViewModelProtocol>)viewModel;
 
 - (void)lt_bindViewModel;
 - (void)lt_setupViews;

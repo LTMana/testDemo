@@ -19,6 +19,12 @@
 		F11B356E1DD55BE7009FE313 /* LTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B356D1DD55BE7009FE313 /* LTRequest.m */; };
 		F11B35711DD565D6009FE313 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B35701DD565D6009FE313 /* View.m */; };
 		F11B35751DD56E36009FE313 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B35741DD56E36009FE313 /* ViewModel.m */; };
+		F1E01BA41DD9B80B00417F03 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BA31DD9B80B00417F03 /* TableViewCell.m */; };
+		F1E01BAD1DD9BBB900417F03 /* LTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BAC1DD9BBB900417F03 /* LTModel.m */; };
+		F1E01BB01DD9BBDC00417F03 /* LTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BAF1DD9BBDC00417F03 /* LTViewModel.m */; };
+		F1E01BB31DD9BC0500417F03 /* LTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BB21DD9BC0500417F03 /* LTViewController.m */; };
+		F1E01BB61DD9BC2200417F03 /* LTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BB51DD9BC2200417F03 /* LTView.m */; };
+		F1E01BB91DD9BC4200417F03 /* LTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E01BB81DD9BC4200417F03 /* LTTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,20 @@
 		F11B35731DD56E36009FE313 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		F11B35741DD56E36009FE313 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		F11B35761DD56E60009FE313 /* ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelProtocol.h; sourceTree = "<group>"; };
+		F1E01BA11DD9AFDC00417F03 /* ViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerProtocol.h; sourceTree = "<group>"; };
+		F1E01BA21DD9B80B00417F03 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		F1E01BA31DD9B80B00417F03 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		F1E01BA51DD9B8BA00417F03 /* TableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellProtocol.h; sourceTree = "<group>"; };
+		F1E01BAB1DD9BBB900417F03 /* LTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTModel.h; sourceTree = "<group>"; };
+		F1E01BAC1DD9BBB900417F03 /* LTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTModel.m; sourceTree = "<group>"; };
+		F1E01BAE1DD9BBDC00417F03 /* LTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTViewModel.h; sourceTree = "<group>"; };
+		F1E01BAF1DD9BBDC00417F03 /* LTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTViewModel.m; sourceTree = "<group>"; };
+		F1E01BB11DD9BC0500417F03 /* LTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTViewController.h; sourceTree = "<group>"; };
+		F1E01BB21DD9BC0500417F03 /* LTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTViewController.m; sourceTree = "<group>"; };
+		F1E01BB41DD9BC2200417F03 /* LTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTView.h; sourceTree = "<group>"; };
+		F1E01BB51DD9BC2200417F03 /* LTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTView.m; sourceTree = "<group>"; };
+		F1E01BB71DD9BC4200417F03 /* LTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTableViewCell.h; sourceTree = "<group>"; };
+		F1E01BB81DD9BC4200417F03 /* LTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +150,9 @@
 			children = (
 				F11B35681DD55AD1009FE313 /* Common */,
 				F11B35651DD555F4009FE313 /* Macro */,
+				F1E01BA61DD9BB0D00417F03 /* Session */,
 				F100FB1D1DD17FAE00615CDA /* AppDelegate.h */,
 				F100FB1E1DD17FAE00615CDA /* AppDelegate.m */,
-				F100FB201DD17FAE00615CDA /* ViewController.h */,
-				F100FB211DD17FAE00615CDA /* ViewController.m */,
 				F100FB231DD17FAE00615CDA /* Main.storyboard */,
 				F100FB261DD17FAE00615CDA /* Assets.xcassets */,
 				F100FB281DD17FAE00615CDA /* LaunchScreen.storyboard */,
@@ -205,6 +224,12 @@
 				F11B35731DD56E36009FE313 /* ViewModel.h */,
 				F11B35741DD56E36009FE313 /* ViewModel.m */,
 				F11B35761DD56E60009FE313 /* ViewModelProtocol.h */,
+				F100FB201DD17FAE00615CDA /* ViewController.h */,
+				F100FB211DD17FAE00615CDA /* ViewController.m */,
+				F1E01BA11DD9AFDC00417F03 /* ViewControllerProtocol.h */,
+				F1E01BA21DD9B80B00417F03 /* TableViewCell.h */,
+				F1E01BA31DD9B80B00417F03 /* TableViewCell.m */,
+				F1E01BA51DD9B8BA00417F03 /* TableViewCellProtocol.h */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -214,6 +239,55 @@
 			children = (
 			);
 			name = General;
+			sourceTree = "<group>";
+		};
+		F1E01BA61DD9BB0D00417F03 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F1E01BAA1DD9BB8200417F03 /* ViewModel */,
+				F1E01BA71DD9BB3200417F03 /* Controller */,
+				F1E01BA81DD9BB4000417F03 /* Model */,
+				F1E01BA91DD9BB6A00417F03 /* View */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		F1E01BA71DD9BB3200417F03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1E01BB11DD9BC0500417F03 /* LTViewController.h */,
+				F1E01BB21DD9BC0500417F03 /* LTViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F1E01BA81DD9BB4000417F03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1E01BAB1DD9BBB900417F03 /* LTModel.h */,
+				F1E01BAC1DD9BBB900417F03 /* LTModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F1E01BA91DD9BB6A00417F03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E01BB41DD9BC2200417F03 /* LTView.h */,
+				F1E01BB51DD9BC2200417F03 /* LTView.m */,
+				F1E01BB71DD9BC4200417F03 /* LTTableViewCell.h */,
+				F1E01BB81DD9BC4200417F03 /* LTTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F1E01BAA1DD9BB8200417F03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1E01BAE1DD9BBDC00417F03 /* LTViewModel.h */,
+				F1E01BAF1DD9BBDC00417F03 /* LTViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		FFD09EFB9A7B0BA1860BD124 /* Pods */ = {
@@ -406,10 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E01BA41DD9B80B00417F03 /* TableViewCell.m in Sources */,
 				F11B35751DD56E36009FE313 /* ViewModel.m in Sources */,
+				F1E01BB61DD9BC2200417F03 /* LTView.m in Sources */,
+				F1E01BB31DD9BC0500417F03 /* LTViewController.m in Sources */,
 				F11B35711DD565D6009FE313 /* View.m in Sources */,
 				F100FB221DD17FAE00615CDA /* ViewController.m in Sources */,
 				F100FB1F1DD17FAE00615CDA /* AppDelegate.m in Sources */,
+				F1E01BB91DD9BC4200417F03 /* LTTableViewCell.m in Sources */,
+				F1E01BB01DD9BBDC00417F03 /* LTViewModel.m in Sources */,
+				F1E01BAD1DD9BBB900417F03 /* LTModel.m in Sources */,
 				F100FB1C1DD17FAE00615CDA /* main.m in Sources */,
 				F11B356E1DD55BE7009FE313 /* LTRequest.m in Sources */,
 			);

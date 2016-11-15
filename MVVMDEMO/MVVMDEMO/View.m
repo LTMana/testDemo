@@ -20,6 +20,18 @@
     return self;
 }
 
+-(instancetype)initWithViewModel:(id<ViewProtocol>)viewModel
+{
+    self = [super init];
+    if (self) {
+        
+        [self lt_setupViews];
+        [self lt_bindViewModel];
+    }
+    return self;
+
+}
+
 
 -(void)lt_setupViews
 {

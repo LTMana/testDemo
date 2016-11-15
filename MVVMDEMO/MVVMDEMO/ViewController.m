@@ -14,15 +14,55 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
++(instancetype)allocWithZone:(struct _NSZone *)zone
+{
+    ViewController *viewController =[super allocWithZone:zone];
+    
+    @weakify(viewController)
+    
+   [[viewController rac_signalForSelector:@selector(viewDidLoad)]
+     subscribeNext:^(id x) {
+         @strongify(viewController)
+        [viewController lt_addSubviews];
+        [viewController lt_bindViewModel];
+         
+    }];
+    
+    
+    [[viewController rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id x) {
+        
+        @strongify(viewController)
+        [viewController lt_layoutNavigation];
+        [viewController lt_getNewData];
+    }];
 
-    // Do any additional setup after loading the view, typically from a nib.
+    
+ 
+     return viewController;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+#pragma mark - RAC
+/**
+ *  添加控件
+ */
+- (void)lt_addSubviews {}
+
+/**
+ *  绑定
+ */
+- (void)lt_bindViewModel {}
+
+/**
+ *  设置navation
+ */
+- (void)lt_layoutNavigation {}
+
+/**
+ *  初次获取数据
+ */
+- (void)lt_getNewData {}
+
 
 @end

@@ -24,11 +24,11 @@ typedef enum : NSUInteger {
 
 - (instancetype)initWithModel:(id)model;
 
-@property (strong, nonatomic)JMRequest *request;
+@property (strong, nonatomic)LTRequest *request;
 
 /**
  *  初始化
  */
-- (void)jm_initialize;
+- (void)lt_initialize;
 
 @end
